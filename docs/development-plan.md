@@ -145,3 +145,11 @@ This document defines the implementation phases for SENTINEL-RAG.
 *   **Tests**: Full benchmark suite execution.
 *   **Acceptance Criteria**: Measurable, non-fabricated metrics demonstrating the value of the Evidence Orchestrator over fixed-budget RAG.
 *   **Risks**: Results may show smaller improvements than anticipated.
+
+## Implementation Status
+- **Phase 0: Planning** - IMPLEMENTED
+- **Phase 1: Repository/backend skeleton** - IMPLEMENTED
+- **Phase 2: Database + Development Infrastructure** - IMPLEMENTED
+- **Phase 3: Document Ingestion** - PLANNED
+- **Phase 4: Baseline RAG** - PLANNED
+- **Phase 5-17** - FUTURE

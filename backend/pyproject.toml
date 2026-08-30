@@ -13,9 +13,10 @@ dependencies = [
     "pydantic>=2.9.0",
     "pydantic-settings>=2.5.0",
     "sqlalchemy>=2.0.35",
-    "psycopg2-binary>=2.9.9",
+    "psycopg[binary]>=3.1.18",
     "pgvector>=0.3.2",
     "alembic>=1.13.3",
+    "redis>=5.0.0",
 ]
 
 [project.optional-dependencies]
@@ -27,3 +28,6 @@ dev = [
 [tool.pytest.ini_options]
 testpaths = ["tests"]
 pythonpath = ["."]
+
+[tool.hatch.build.targets.wheel]
+packages = ["app"]
