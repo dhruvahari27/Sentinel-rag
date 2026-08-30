@@ -4,7 +4,8 @@ from app.db.session import get_db
 from app.schemas.retrieval import QueryRequest, QueryResponse
 from app.services.retrieval.vector import VectorRetriever
 from app.services.embeddings.provider import get_embedding_provider
-import time
+from app.services.generation.llm import get_llm_provider
+from app.services.rag.service import BaselineRAGService
 
 router = APIRouter()
 
@@ -13,21 +14,21 @@ def query_documents(
     request: QueryRequest,
     db: Session = Depends(get_db)
 ):
-    start_time = time.time()
-    
     try:
+        # Currently we only support vector in this baseline phase
+        if request.retriever_type != "vector":
+            request.retriever_type = "vector"
+            
         embedding_provider = get_embedding_provider()
         retriever = VectorRetriever(db, embedding_provider)
         
-        results = retriever.retrieve(request.question, top_k=request.top_k)
+        llm_provider = get_llm_provider()
         
-        latency = (time.time() - start_time) * 1000  # ms
+        rag_service = BaselineRAGService(retriever, llm_provider)
         
-        return QueryResponse(
-            question=request.question,
-            results=results,
-            latency_ms=latency
-        )
+        # answer_question encapsulates retrieval, context building, LLM generation, and formatting
+        response = rag_service.answer_question(request)
+        return response
     except Exception as e:
         raise HTTPException(
             status_code=status.HTTP_500_INTERNAL_SERVER_ERROR,

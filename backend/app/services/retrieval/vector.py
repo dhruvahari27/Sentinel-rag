@@ -11,7 +11,7 @@ class VectorRetriever(BaseRetriever):
         self.db = db
         self.embedding_provider = embedding_provider
 
-    def retrieve(self, query: str, top_k: int = 5) -> List[RetrievalChunk]:
+    def retrieve(self, query: str, top_k: int = 5, filters: dict = None) -> List[RetrievalChunk]:
         # Embed the query
         query_embedding = self.embedding_provider.embed_query(query)
         
@@ -19,11 +19,13 @@ class VectorRetriever(BaseRetriever):
         # For cosine similarity, it's 1 - cosine_distance
         distance_col = DocumentChunk.embedding.cosine_distance(query_embedding).label("distance")
         
-        stmt = (
-            select(DocumentChunk, distance_col)
-            .order_by(distance_col)
-            .limit(top_k)
-        )
+        stmt = select(DocumentChunk, distance_col)
+        
+        if filters:
+            if "document_id" in filters:
+                stmt = stmt.where(DocumentChunk.document_id == filters["document_id"])
+        
+        stmt = stmt.order_by(distance_col).limit(top_k)
         
         results = self.db.execute(stmt).all()
         
@@ -38,7 +40,7 @@ class VectorRetriever(BaseRetriever):
                     text=chunk.text,
                     score=score,
                     rank=rank,
-                    metadata_={
+                    metadata={
                         "chunk_index": chunk.chunk_index,
                         "retriever": "vector"
                     }

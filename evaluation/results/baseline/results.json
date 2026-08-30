@@ -1,0 +1,1155 @@
+{
+  "metrics": {
+    "Recall@3": 0.2,
+    "Recall@5": 0.4,
+    "Recall@10": 0.6,
+    "MRR": 0.2622222222222222,
+    "total_latency_seconds": 0.09103679656982422,
+    "average_latency_ms": 4.551839828491211,
+    "embedding_model": "mock-embeddings-1536",
+    "retriever": "vector",
+    "dataset_size": 20
+  },
+  "results": [
+    {
+      "question": "Who created Python?",
+      "expected_document": "doc1.txt",
+      "found_rank": 1,
+      "retrieved": [
+        {
+          "chunk_id": "b4416c9d-6f72-45f9-b541-646ad203693b",
+          "doc_id": "86678816-5539-4cd7-adf4-3832939f7bfb",
+          "score": 1.0
+        },
+        {
+          "chunk_id": "e84d67db-7013-49dc-be9f-738f0bb4cb0a",
+          "doc_id": "86678816-5539-4cd7-adf4-3832939f7bfb",
+          "score": 1.0
+        },
+        {
+          "chunk_id": "76f0d5af-09e1-4d9b-8e70-4149ec1b214e",
+          "doc_id": "86678816-5539-4cd7-adf4-3832939f7bfb",
+          "score": 1.0
+        },
+        {
+          "chunk_id": "227280f3-64b4-445c-8672-7f428f976877",
+          "doc_id": "86678816-5539-4cd7-adf4-3832939f7bfb",
+          "score": 1.0
+        },
+        {
+          "chunk_id": "ddef6c9d-62d9-476c-a306-fa461d8dd3c2",
+          "doc_id": "0eaa1adf-c552-4687-a56e-0596eb596cb9",
+          "score": 1.0
+        },
+        {
+          "chunk_id": "c2590f44-b2b4-4b3f-94a3-75f302749ab2",
+          "doc_id": "0eaa1adf-c552-4687-a56e-0596eb596cb9",
+          "score": 1.0
+        },
+        {
+          "chunk_id": "24845884-3f20-4fe4-8744-644757bc1da1",
+          "doc_id": "0eaa1adf-c552-4687-a56e-0596eb596cb9",
+          "score": 1.0
+        },
+        {
+          "chunk_id": "94868d96-1270-4341-8e3f-141e32e854f2",
+          "doc_id": "0eaa1adf-c552-4687-a56e-0596eb596cb9",
+          "score": 1.0
+        },
+        {
+          "chunk_id": "14e0d99c-f606-4364-aa6f-7d30932df81a",
+          "doc_id": "e482a748-e725-4050-bf0d-4497c401507b",
+          "score": 1.0
+        },
+        {
+          "chunk_id": "8e4ee8a2-6d3b-4bc6-a208-4ed18f816493",
+          "doc_id": "86678816-5539-4cd7-adf4-3832939f7bfb",
+          "score": 1.0
+        }
+      ]
+    },
+    {
+      "question": "When was Python released?",
+      "expected_document": "doc1.txt",
+      "found_rank": 1,
+      "retrieved": [
+        {
+          "chunk_id": "b4416c9d-6f72-45f9-b541-646ad203693b",
+          "doc_id": "86678816-5539-4cd7-adf4-3832939f7bfb",
+          "score": 1.0
+        },
+        {
+          "chunk_id": "e84d67db-7013-49dc-be9f-738f0bb4cb0a",
+          "doc_id": "86678816-5539-4cd7-adf4-3832939f7bfb",
+          "score": 1.0
+        },
+        {
+          "chunk_id": "76f0d5af-09e1-4d9b-8e70-4149ec1b214e",
+          "doc_id": "86678816-5539-4cd7-adf4-3832939f7bfb",
+          "score": 1.0
+        },
+        {
+          "chunk_id": "227280f3-64b4-445c-8672-7f428f976877",
+          "doc_id": "86678816-5539-4cd7-adf4-3832939f7bfb",
+          "score": 1.0
+        },
+        {
+          "chunk_id": "ddef6c9d-62d9-476c-a306-fa461d8dd3c2",
+          "doc_id": "0eaa1adf-c552-4687-a56e-0596eb596cb9",
+          "score": 1.0
+        },
+        {
+          "chunk_id": "c2590f44-b2b4-4b3f-94a3-75f302749ab2",
+          "doc_id": "0eaa1adf-c552-4687-a56e-0596eb596cb9",
+          "score": 1.0
+        },
+        {
+          "chunk_id": "24845884-3f20-4fe4-8744-644757bc1da1",
+          "doc_id": "0eaa1adf-c552-4687-a56e-0596eb596cb9",
+          "score": 1.0
+        },
+        {
+          "chunk_id": "94868d96-1270-4341-8e3f-141e32e854f2",
+          "doc_id": "0eaa1adf-c552-4687-a56e-0596eb596cb9",
+          "score": 1.0
+        },
+        {
+          "chunk_id": "14e0d99c-f606-4364-aa6f-7d30932df81a",
+          "doc_id": "e482a748-e725-4050-bf0d-4497c401507b",
+          "score": 1.0
+        },
+        {
+          "chunk_id": "8e4ee8a2-6d3b-4bc6-a208-4ed18f816493",
+          "doc_id": "86678816-5539-4cd7-adf4-3832939f7bfb",
+          "score": 1.0
+        }
+      ]
+    },
+    {
+      "question": "What is Python's design philosophy?",
+      "expected_document": "doc1.txt",
+      "found_rank": 1,
+      "retrieved": [
+        {
+          "chunk_id": "b4416c9d-6f72-45f9-b541-646ad203693b",
+          "doc_id": "86678816-5539-4cd7-adf4-3832939f7bfb",
+          "score": 1.0
+        },
+        {
+          "chunk_id": "e84d67db-7013-49dc-be9f-738f0bb4cb0a",
+          "doc_id": "86678816-5539-4cd7-adf4-3832939f7bfb",
+          "score": 1.0
+        },
+        {
+          "chunk_id": "76f0d5af-09e1-4d9b-8e70-4149ec1b214e",
+          "doc_id": "86678816-5539-4cd7-adf4-3832939f7bfb",
+          "score": 1.0
+        },
+        {
+          "chunk_id": "227280f3-64b4-445c-8672-7f428f976877",
+          "doc_id": "86678816-5539-4cd7-adf4-3832939f7bfb",
+          "score": 1.0
+        },
+        {
+          "chunk_id": "ddef6c9d-62d9-476c-a306-fa461d8dd3c2",
+          "doc_id": "0eaa1adf-c552-4687-a56e-0596eb596cb9",
+          "score": 1.0
+        },
+        {
+          "chunk_id": "c2590f44-b2b4-4b3f-94a3-75f302749ab2",
+          "doc_id": "0eaa1adf-c552-4687-a56e-0596eb596cb9",
+          "score": 1.0
+        },
+        {
+          "chunk_id": "24845884-3f20-4fe4-8744-644757bc1da1",
+          "doc_id": "0eaa1adf-c552-4687-a56e-0596eb596cb9",
+          "score": 1.0
+        },
+        {
+          "chunk_id": "94868d96-1270-4341-8e3f-141e32e854f2",
+          "doc_id": "0eaa1adf-c552-4687-a56e-0596eb596cb9",
+          "score": 1.0
+        },
+        {
+          "chunk_id": "14e0d99c-f606-4364-aa6f-7d30932df81a",
+          "doc_id": "e482a748-e725-4050-bf0d-4497c401507b",
+          "score": 1.0
+        },
+        {
+          "chunk_id": "8e4ee8a2-6d3b-4bc6-a208-4ed18f816493",
+          "doc_id": "86678816-5539-4cd7-adf4-3832939f7bfb",
+          "score": 1.0
+        }
+      ]
+    },
+    {
+      "question": "Is Python high-level?",
+      "expected_document": "doc1.txt",
+      "found_rank": 1,
+      "retrieved": [
+        {
+          "chunk_id": "b4416c9d-6f72-45f9-b541-646ad203693b",
+          "doc_id": "86678816-5539-4cd7-adf4-3832939f7bfb",
+          "score": 1.0
+        },
+        {
+          "chunk_id": "e84d67db-7013-49dc-be9f-738f0bb4cb0a",
+          "doc_id": "86678816-5539-4cd7-adf4-3832939f7bfb",
+          "score": 1.0
+        },
+        {
+          "chunk_id": "76f0d5af-09e1-4d9b-8e70-4149ec1b214e",
+          "doc_id": "86678816-5539-4cd7-adf4-3832939f7bfb",
+          "score": 1.0
+        },
+        {
+          "chunk_id": "227280f3-64b4-445c-8672-7f428f976877",
+          "doc_id": "86678816-5539-4cd7-adf4-3832939f7bfb",
+          "score": 1.0
+        },
+        {
+          "chunk_id": "ddef6c9d-62d9-476c-a306-fa461d8dd3c2",
+          "doc_id": "0eaa1adf-c552-4687-a56e-0596eb596cb9",
+          "score": 1.0
+        },
+        {
+          "chunk_id": "c2590f44-b2b4-4b3f-94a3-75f302749ab2",
+          "doc_id": "0eaa1adf-c552-4687-a56e-0596eb596cb9",
+          "score": 1.0
+        },
+        {
+          "chunk_id": "24845884-3f20-4fe4-8744-644757bc1da1",
+          "doc_id": "0eaa1adf-c552-4687-a56e-0596eb596cb9",
+          "score": 1.0
+        },
+        {
+          "chunk_id": "94868d96-1270-4341-8e3f-141e32e854f2",
+          "doc_id": "0eaa1adf-c552-4687-a56e-0596eb596cb9",
+          "score": 1.0
+        },
+        {
+          "chunk_id": "14e0d99c-f606-4364-aa6f-7d30932df81a",
+          "doc_id": "e482a748-e725-4050-bf0d-4497c401507b",
+          "score": 1.0
+        },
+        {
+          "chunk_id": "8e4ee8a2-6d3b-4bc6-a208-4ed18f816493",
+          "doc_id": "86678816-5539-4cd7-adf4-3832939f7bfb",
+          "score": 1.0
+        }
+      ]
+    },
+    {
+      "question": "What animal jumps over the dog?",
+      "expected_document": "doc2.txt",
+      "found_rank": 5,
+      "retrieved": [
+        {
+          "chunk_id": "b4416c9d-6f72-45f9-b541-646ad203693b",
+          "doc_id": "86678816-5539-4cd7-adf4-3832939f7bfb",
+          "score": 1.0
+        },
+        {
+          "chunk_id": "e84d67db-7013-49dc-be9f-738f0bb4cb0a",
+          "doc_id": "86678816-5539-4cd7-adf4-3832939f7bfb",
+          "score": 1.0
+        },
+        {
+          "chunk_id": "76f0d5af-09e1-4d9b-8e70-4149ec1b214e",
+          "doc_id": "86678816-5539-4cd7-adf4-3832939f7bfb",
+          "score": 1.0
+        },
+        {
+          "chunk_id": "227280f3-64b4-445c-8672-7f428f976877",
+          "doc_id": "86678816-5539-4cd7-adf4-3832939f7bfb",
+          "score": 1.0
+        },
+        {
+          "chunk_id": "ddef6c9d-62d9-476c-a306-fa461d8dd3c2",
+          "doc_id": "0eaa1adf-c552-4687-a56e-0596eb596cb9",
+          "score": 1.0
+        },
+        {
+          "chunk_id": "c2590f44-b2b4-4b3f-94a3-75f302749ab2",
+          "doc_id": "0eaa1adf-c552-4687-a56e-0596eb596cb9",
+          "score": 1.0
+        },
+        {
+          "chunk_id": "24845884-3f20-4fe4-8744-644757bc1da1",
+          "doc_id": "0eaa1adf-c552-4687-a56e-0596eb596cb9",
+          "score": 1.0
+        },
+        {
+          "chunk_id": "94868d96-1270-4341-8e3f-141e32e854f2",
+          "doc_id": "0eaa1adf-c552-4687-a56e-0596eb596cb9",
+          "score": 1.0
+        },
+        {
+          "chunk_id": "14e0d99c-f606-4364-aa6f-7d30932df81a",
+          "doc_id": "e482a748-e725-4050-bf0d-4497c401507b",
+          "score": 1.0
+        },
+        {
+          "chunk_id": "8e4ee8a2-6d3b-4bc6-a208-4ed18f816493",
+          "doc_id": "86678816-5539-4cd7-adf4-3832939f7bfb",
+          "score": 1.0
+        }
+      ]
+    },
+    {
+      "question": "What is a pangram?",
+      "expected_document": "doc2.txt",
+      "found_rank": 5,
+      "retrieved": [
+        {
+          "chunk_id": "b4416c9d-6f72-45f9-b541-646ad203693b",
+          "doc_id": "86678816-5539-4cd7-adf4-3832939f7bfb",
+          "score": 1.0
+        },
+        {
+          "chunk_id": "e84d67db-7013-49dc-be9f-738f0bb4cb0a",
+          "doc_id": "86678816-5539-4cd7-adf4-3832939f7bfb",
+          "score": 1.0
+        },
+        {
+          "chunk_id": "76f0d5af-09e1-4d9b-8e70-4149ec1b214e",
+          "doc_id": "86678816-5539-4cd7-adf4-3832939f7bfb",
+          "score": 1.0
+        },
+        {
+          "chunk_id": "227280f3-64b4-445c-8672-7f428f976877",
+          "doc_id": "86678816-5539-4cd7-adf4-3832939f7bfb",
+          "score": 1.0
+        },
+        {
+          "chunk_id": "ddef6c9d-62d9-476c-a306-fa461d8dd3c2",
+          "doc_id": "0eaa1adf-c552-4687-a56e-0596eb596cb9",
+          "score": 1.0
+        },
+        {
+          "chunk_id": "c2590f44-b2b4-4b3f-94a3-75f302749ab2",
+          "doc_id": "0eaa1adf-c552-4687-a56e-0596eb596cb9",
+          "score": 1.0
+        },
+        {
+          "chunk_id": "24845884-3f20-4fe4-8744-644757bc1da1",
+          "doc_id": "0eaa1adf-c552-4687-a56e-0596eb596cb9",
+          "score": 1.0
+        },
+        {
+          "chunk_id": "94868d96-1270-4341-8e3f-141e32e854f2",
+          "doc_id": "0eaa1adf-c552-4687-a56e-0596eb596cb9",
+          "score": 1.0
+        },
+        {
+          "chunk_id": "14e0d99c-f606-4364-aa6f-7d30932df81a",
+          "doc_id": "e482a748-e725-4050-bf0d-4497c401507b",
+          "score": 1.0
+        },
+        {
+          "chunk_id": "8e4ee8a2-6d3b-4bc6-a208-4ed18f816493",
+          "doc_id": "86678816-5539-4cd7-adf4-3832939f7bfb",
+          "score": 1.0
+        }
+      ]
+    },
+    {
+      "question": "Does the sentence contain all letters?",
+      "expected_document": "doc2.txt",
+      "found_rank": 5,
+      "retrieved": [
+        {
+          "chunk_id": "b4416c9d-6f72-45f9-b541-646ad203693b",
+          "doc_id": "86678816-5539-4cd7-adf4-3832939f7bfb",
+          "score": 1.0
+        },
+        {
+          "chunk_id": "e84d67db-7013-49dc-be9f-738f0bb4cb0a",
+          "doc_id": "86678816-5539-4cd7-adf4-3832939f7bfb",
+          "score": 1.0
+        },
+        {
+          "chunk_id": "76f0d5af-09e1-4d9b-8e70-4149ec1b214e",
+          "doc_id": "86678816-5539-4cd7-adf4-3832939f7bfb",
+          "score": 1.0
+        },
+        {
+          "chunk_id": "227280f3-64b4-445c-8672-7f428f976877",
+          "doc_id": "86678816-5539-4cd7-adf4-3832939f7bfb",
+          "score": 1.0
+        },
+        {
+          "chunk_id": "ddef6c9d-62d9-476c-a306-fa461d8dd3c2",
+          "doc_id": "0eaa1adf-c552-4687-a56e-0596eb596cb9",
+          "score": 1.0
+        },
+        {
+          "chunk_id": "c2590f44-b2b4-4b3f-94a3-75f302749ab2",
+          "doc_id": "0eaa1adf-c552-4687-a56e-0596eb596cb9",
+          "score": 1.0
+        },
+        {
+          "chunk_id": "24845884-3f20-4fe4-8744-644757bc1da1",
+          "doc_id": "0eaa1adf-c552-4687-a56e-0596eb596cb9",
+          "score": 1.0
+        },
+        {
+          "chunk_id": "94868d96-1270-4341-8e3f-141e32e854f2",
+          "doc_id": "0eaa1adf-c552-4687-a56e-0596eb596cb9",
+          "score": 1.0
+        },
+        {
+          "chunk_id": "14e0d99c-f606-4364-aa6f-7d30932df81a",
+          "doc_id": "e482a748-e725-4050-bf0d-4497c401507b",
+          "score": 1.0
+        },
+        {
+          "chunk_id": "8e4ee8a2-6d3b-4bc6-a208-4ed18f816493",
+          "doc_id": "86678816-5539-4cd7-adf4-3832939f7bfb",
+          "score": 1.0
+        }
+      ]
+    },
+    {
+      "question": "What color is the fox?",
+      "expected_document": "doc2.txt",
+      "found_rank": 5,
+      "retrieved": [
+        {
+          "chunk_id": "b4416c9d-6f72-45f9-b541-646ad203693b",
+          "doc_id": "86678816-5539-4cd7-adf4-3832939f7bfb",
+          "score": 1.0
+        },
+        {
+          "chunk_id": "e84d67db-7013-49dc-be9f-738f0bb4cb0a",
+          "doc_id": "86678816-5539-4cd7-adf4-3832939f7bfb",
+          "score": 1.0
+        },
+        {
+          "chunk_id": "76f0d5af-09e1-4d9b-8e70-4149ec1b214e",
+          "doc_id": "86678816-5539-4cd7-adf4-3832939f7bfb",
+          "score": 1.0
+        },
+        {
+          "chunk_id": "227280f3-64b4-445c-8672-7f428f976877",
+          "doc_id": "86678816-5539-4cd7-adf4-3832939f7bfb",
+          "score": 1.0
+        },
+        {
+          "chunk_id": "ddef6c9d-62d9-476c-a306-fa461d8dd3c2",
+          "doc_id": "0eaa1adf-c552-4687-a56e-0596eb596cb9",
+          "score": 1.0
+        },
+        {
+          "chunk_id": "c2590f44-b2b4-4b3f-94a3-75f302749ab2",
+          "doc_id": "0eaa1adf-c552-4687-a56e-0596eb596cb9",
+          "score": 1.0
+        },
+        {
+          "chunk_id": "24845884-3f20-4fe4-8744-644757bc1da1",
+          "doc_id": "0eaa1adf-c552-4687-a56e-0596eb596cb9",
+          "score": 1.0
+        },
+        {
+          "chunk_id": "94868d96-1270-4341-8e3f-141e32e854f2",
+          "doc_id": "0eaa1adf-c552-4687-a56e-0596eb596cb9",
+          "score": 1.0
+        },
+        {
+          "chunk_id": "14e0d99c-f606-4364-aa6f-7d30932df81a",
+          "doc_id": "e482a748-e725-4050-bf0d-4497c401507b",
+          "score": 1.0
+        },
+        {
+          "chunk_id": "8e4ee8a2-6d3b-4bc6-a208-4ed18f816493",
+          "doc_id": "86678816-5539-4cd7-adf4-3832939f7bfb",
+          "score": 1.0
+        }
+      ]
+    },
+    {
+      "question": "What is machine learning?",
+      "expected_document": "doc3.txt",
+      "found_rank": 9,
+      "retrieved": [
+        {
+          "chunk_id": "b4416c9d-6f72-45f9-b541-646ad203693b",
+          "doc_id": "86678816-5539-4cd7-adf4-3832939f7bfb",
+          "score": 1.0
+        },
+        {
+          "chunk_id": "e84d67db-7013-49dc-be9f-738f0bb4cb0a",
+          "doc_id": "86678816-5539-4cd7-adf4-3832939f7bfb",
+          "score": 1.0
+        },
+        {
+          "chunk_id": "76f0d5af-09e1-4d9b-8e70-4149ec1b214e",
+          "doc_id": "86678816-5539-4cd7-adf4-3832939f7bfb",
+          "score": 1.0
+        },
+        {
+          "chunk_id": "227280f3-64b4-445c-8672-7f428f976877",
+          "doc_id": "86678816-5539-4cd7-adf4-3832939f7bfb",
+          "score": 1.0
+        },
+        {
+          "chunk_id": "ddef6c9d-62d9-476c-a306-fa461d8dd3c2",
+          "doc_id": "0eaa1adf-c552-4687-a56e-0596eb596cb9",
+          "score": 1.0
+        },
+        {
+          "chunk_id": "c2590f44-b2b4-4b3f-94a3-75f302749ab2",
+          "doc_id": "0eaa1adf-c552-4687-a56e-0596eb596cb9",
+          "score": 1.0
+        },
+        {
+          "chunk_id": "24845884-3f20-4fe4-8744-644757bc1da1",
+          "doc_id": "0eaa1adf-c552-4687-a56e-0596eb596cb9",
+          "score": 1.0
+        },
+        {
+          "chunk_id": "94868d96-1270-4341-8e3f-141e32e854f2",
+          "doc_id": "0eaa1adf-c552-4687-a56e-0596eb596cb9",
+          "score": 1.0
+        },
+        {
+          "chunk_id": "14e0d99c-f606-4364-aa6f-7d30932df81a",
+          "doc_id": "e482a748-e725-4050-bf0d-4497c401507b",
+          "score": 1.0
+        },
+        {
+          "chunk_id": "8e4ee8a2-6d3b-4bc6-a208-4ed18f816493",
+          "doc_id": "86678816-5539-4cd7-adf4-3832939f7bfb",
+          "score": 1.0
+        }
+      ]
+    },
+    {
+      "question": "How do algorithms improve?",
+      "expected_document": "doc3.txt",
+      "found_rank": 9,
+      "retrieved": [
+        {
+          "chunk_id": "b4416c9d-6f72-45f9-b541-646ad203693b",
+          "doc_id": "86678816-5539-4cd7-adf4-3832939f7bfb",
+          "score": 1.0
+        },
+        {
+          "chunk_id": "e84d67db-7013-49dc-be9f-738f0bb4cb0a",
+          "doc_id": "86678816-5539-4cd7-adf4-3832939f7bfb",
+          "score": 1.0
+        },
+        {
+          "chunk_id": "76f0d5af-09e1-4d9b-8e70-4149ec1b214e",
+          "doc_id": "86678816-5539-4cd7-adf4-3832939f7bfb",
+          "score": 1.0
+        },
+        {
+          "chunk_id": "227280f3-64b4-445c-8672-7f428f976877",
+          "doc_id": "86678816-5539-4cd7-adf4-3832939f7bfb",
+          "score": 1.0
+        },
+        {
+          "chunk_id": "ddef6c9d-62d9-476c-a306-fa461d8dd3c2",
+          "doc_id": "0eaa1adf-c552-4687-a56e-0596eb596cb9",
+          "score": 1.0
+        },
+        {
+          "chunk_id": "c2590f44-b2b4-4b3f-94a3-75f302749ab2",
+          "doc_id": "0eaa1adf-c552-4687-a56e-0596eb596cb9",
+          "score": 1.0
+        },
+        {
+          "chunk_id": "24845884-3f20-4fe4-8744-644757bc1da1",
+          "doc_id": "0eaa1adf-c552-4687-a56e-0596eb596cb9",
+          "score": 1.0
+        },
+        {
+          "chunk_id": "94868d96-1270-4341-8e3f-141e32e854f2",
+          "doc_id": "0eaa1adf-c552-4687-a56e-0596eb596cb9",
+          "score": 1.0
+        },
+        {
+          "chunk_id": "14e0d99c-f606-4364-aa6f-7d30932df81a",
+          "doc_id": "e482a748-e725-4050-bf0d-4497c401507b",
+          "score": 1.0
+        },
+        {
+          "chunk_id": "8e4ee8a2-6d3b-4bc6-a208-4ed18f816493",
+          "doc_id": "86678816-5539-4cd7-adf4-3832939f7bfb",
+          "score": 1.0
+        }
+      ]
+    },
+    {
+      "question": "Is ML a subset of AI?",
+      "expected_document": "doc3.txt",
+      "found_rank": 9,
+      "retrieved": [
+        {
+          "chunk_id": "b4416c9d-6f72-45f9-b541-646ad203693b",
+          "doc_id": "86678816-5539-4cd7-adf4-3832939f7bfb",
+          "score": 1.0
+        },
+        {
+          "chunk_id": "e84d67db-7013-49dc-be9f-738f0bb4cb0a",
+          "doc_id": "86678816-5539-4cd7-adf4-3832939f7bfb",
+          "score": 1.0
+        },
+        {
+          "chunk_id": "76f0d5af-09e1-4d9b-8e70-4149ec1b214e",
+          "doc_id": "86678816-5539-4cd7-adf4-3832939f7bfb",
+          "score": 1.0
+        },
+        {
+          "chunk_id": "227280f3-64b4-445c-8672-7f428f976877",
+          "doc_id": "86678816-5539-4cd7-adf4-3832939f7bfb",
+          "score": 1.0
+        },
+        {
+          "chunk_id": "ddef6c9d-62d9-476c-a306-fa461d8dd3c2",
+          "doc_id": "0eaa1adf-c552-4687-a56e-0596eb596cb9",
+          "score": 1.0
+        },
+        {
+          "chunk_id": "c2590f44-b2b4-4b3f-94a3-75f302749ab2",
+          "doc_id": "0eaa1adf-c552-4687-a56e-0596eb596cb9",
+          "score": 1.0
+        },
+        {
+          "chunk_id": "24845884-3f20-4fe4-8744-644757bc1da1",
+          "doc_id": "0eaa1adf-c552-4687-a56e-0596eb596cb9",
+          "score": 1.0
+        },
+        {
+          "chunk_id": "94868d96-1270-4341-8e3f-141e32e854f2",
+          "doc_id": "0eaa1adf-c552-4687-a56e-0596eb596cb9",
+          "score": 1.0
+        },
+        {
+          "chunk_id": "14e0d99c-f606-4364-aa6f-7d30932df81a",
+          "doc_id": "e482a748-e725-4050-bf0d-4497c401507b",
+          "score": 1.0
+        },
+        {
+          "chunk_id": "8e4ee8a2-6d3b-4bc6-a208-4ed18f816493",
+          "doc_id": "86678816-5539-4cd7-adf4-3832939f7bfb",
+          "score": 1.0
+        }
+      ]
+    },
+    {
+      "question": "Do algorithms improve automatically?",
+      "expected_document": "doc3.txt",
+      "found_rank": 9,
+      "retrieved": [
+        {
+          "chunk_id": "b4416c9d-6f72-45f9-b541-646ad203693b",
+          "doc_id": "86678816-5539-4cd7-adf4-3832939f7bfb",
+          "score": 1.0
+        },
+        {
+          "chunk_id": "e84d67db-7013-49dc-be9f-738f0bb4cb0a",
+          "doc_id": "86678816-5539-4cd7-adf4-3832939f7bfb",
+          "score": 1.0
+        },
+        {
+          "chunk_id": "76f0d5af-09e1-4d9b-8e70-4149ec1b214e",
+          "doc_id": "86678816-5539-4cd7-adf4-3832939f7bfb",
+          "score": 1.0
+        },
+        {
+          "chunk_id": "227280f3-64b4-445c-8672-7f428f976877",
+          "doc_id": "86678816-5539-4cd7-adf4-3832939f7bfb",
+          "score": 1.0
+        },
+        {
+          "chunk_id": "ddef6c9d-62d9-476c-a306-fa461d8dd3c2",
+          "doc_id": "0eaa1adf-c552-4687-a56e-0596eb596cb9",
+          "score": 1.0
+        },
+        {
+          "chunk_id": "c2590f44-b2b4-4b3f-94a3-75f302749ab2",
+          "doc_id": "0eaa1adf-c552-4687-a56e-0596eb596cb9",
+          "score": 1.0
+        },
+        {
+          "chunk_id": "24845884-3f20-4fe4-8744-644757bc1da1",
+          "doc_id": "0eaa1adf-c552-4687-a56e-0596eb596cb9",
+          "score": 1.0
+        },
+        {
+          "chunk_id": "94868d96-1270-4341-8e3f-141e32e854f2",
+          "doc_id": "0eaa1adf-c552-4687-a56e-0596eb596cb9",
+          "score": 1.0
+        },
+        {
+          "chunk_id": "14e0d99c-f606-4364-aa6f-7d30932df81a",
+          "doc_id": "e482a748-e725-4050-bf0d-4497c401507b",
+          "score": 1.0
+        },
+        {
+          "chunk_id": "8e4ee8a2-6d3b-4bc6-a208-4ed18f816493",
+          "doc_id": "86678816-5539-4cd7-adf4-3832939f7bfb",
+          "score": 1.0
+        }
+      ]
+    },
+    {
+      "question": "What is PostgreSQL?",
+      "expected_document": "doc4.txt",
+      "found_rank": 0,
+      "retrieved": [
+        {
+          "chunk_id": "b4416c9d-6f72-45f9-b541-646ad203693b",
+          "doc_id": "86678816-5539-4cd7-adf4-3832939f7bfb",
+          "score": 1.0
+        },
+        {
+          "chunk_id": "e84d67db-7013-49dc-be9f-738f0bb4cb0a",
+          "doc_id": "86678816-5539-4cd7-adf4-3832939f7bfb",
+          "score": 1.0
+        },
+        {
+          "chunk_id": "76f0d5af-09e1-4d9b-8e70-4149ec1b214e",
+          "doc_id": "86678816-5539-4cd7-adf4-3832939f7bfb",
+          "score": 1.0
+        },
+        {
+          "chunk_id": "227280f3-64b4-445c-8672-7f428f976877",
+          "doc_id": "86678816-5539-4cd7-adf4-3832939f7bfb",
+          "score": 1.0
+        },
+        {
+          "chunk_id": "ddef6c9d-62d9-476c-a306-fa461d8dd3c2",
+          "doc_id": "0eaa1adf-c552-4687-a56e-0596eb596cb9",
+          "score": 1.0
+        },
+        {
+          "chunk_id": "c2590f44-b2b4-4b3f-94a3-75f302749ab2",
+          "doc_id": "0eaa1adf-c552-4687-a56e-0596eb596cb9",
+          "score": 1.0
+        },
+        {
+          "chunk_id": "24845884-3f20-4fe4-8744-644757bc1da1",
+          "doc_id": "0eaa1adf-c552-4687-a56e-0596eb596cb9",
+          "score": 1.0
+        },
+        {
+          "chunk_id": "94868d96-1270-4341-8e3f-141e32e854f2",
+          "doc_id": "0eaa1adf-c552-4687-a56e-0596eb596cb9",
+          "score": 1.0
+        },
+        {
+          "chunk_id": "14e0d99c-f606-4364-aa6f-7d30932df81a",
+          "doc_id": "e482a748-e725-4050-bf0d-4497c401507b",
+          "score": 1.0
+        },
+        {
+          "chunk_id": "8e4ee8a2-6d3b-4bc6-a208-4ed18f816493",
+          "doc_id": "86678816-5539-4cd7-adf4-3832939f7bfb",
+          "score": 1.0
+        }
+      ]
+    },
+    {
+      "question": "Is PostgreSQL open source?",
+      "expected_document": "doc4.txt",
+      "found_rank": 0,
+      "retrieved": [
+        {
+          "chunk_id": "b4416c9d-6f72-45f9-b541-646ad203693b",
+          "doc_id": "86678816-5539-4cd7-adf4-3832939f7bfb",
+          "score": 1.0
+        },
+        {
+          "chunk_id": "e84d67db-7013-49dc-be9f-738f0bb4cb0a",
+          "doc_id": "86678816-5539-4cd7-adf4-3832939f7bfb",
+          "score": 1.0
+        },
+        {
+          "chunk_id": "76f0d5af-09e1-4d9b-8e70-4149ec1b214e",
+          "doc_id": "86678816-5539-4cd7-adf4-3832939f7bfb",
+          "score": 1.0
+        },
+        {
+          "chunk_id": "227280f3-64b4-445c-8672-7f428f976877",
+          "doc_id": "86678816-5539-4cd7-adf4-3832939f7bfb",
+          "score": 1.0
+        },
+        {
+          "chunk_id": "ddef6c9d-62d9-476c-a306-fa461d8dd3c2",
+          "doc_id": "0eaa1adf-c552-4687-a56e-0596eb596cb9",
+          "score": 1.0
+        },
+        {
+          "chunk_id": "c2590f44-b2b4-4b3f-94a3-75f302749ab2",
+          "doc_id": "0eaa1adf-c552-4687-a56e-0596eb596cb9",
+          "score": 1.0
+        },
+        {
+          "chunk_id": "24845884-3f20-4fe4-8744-644757bc1da1",
+          "doc_id": "0eaa1adf-c552-4687-a56e-0596eb596cb9",
+          "score": 1.0
+        },
+        {
+          "chunk_id": "94868d96-1270-4341-8e3f-141e32e854f2",
+          "doc_id": "0eaa1adf-c552-4687-a56e-0596eb596cb9",
+          "score": 1.0
+        },
+        {
+          "chunk_id": "14e0d99c-f606-4364-aa6f-7d30932df81a",
+          "doc_id": "e482a748-e725-4050-bf0d-4497c401507b",
+          "score": 1.0
+        },
+        {
+          "chunk_id": "8e4ee8a2-6d3b-4bc6-a208-4ed18f816493",
+          "doc_id": "86678816-5539-4cd7-adf4-3832939f7bfb",
+          "score": 1.0
+        }
+      ]
+    },
+    {
+      "question": "What language does PostgreSQL extend?",
+      "expected_document": "doc4.txt",
+      "found_rank": 0,
+      "retrieved": [
+        {
+          "chunk_id": "b4416c9d-6f72-45f9-b541-646ad203693b",
+          "doc_id": "86678816-5539-4cd7-adf4-3832939f7bfb",
+          "score": 1.0
+        },
+        {
+          "chunk_id": "e84d67db-7013-49dc-be9f-738f0bb4cb0a",
+          "doc_id": "86678816-5539-4cd7-adf4-3832939f7bfb",
+          "score": 1.0
+        },
+        {
+          "chunk_id": "76f0d5af-09e1-4d9b-8e70-4149ec1b214e",
+          "doc_id": "86678816-5539-4cd7-adf4-3832939f7bfb",
+          "score": 1.0
+        },
+        {
+          "chunk_id": "227280f3-64b4-445c-8672-7f428f976877",
+          "doc_id": "86678816-5539-4cd7-adf4-3832939f7bfb",
+          "score": 1.0
+        },
+        {
+          "chunk_id": "ddef6c9d-62d9-476c-a306-fa461d8dd3c2",
+          "doc_id": "0eaa1adf-c552-4687-a56e-0596eb596cb9",
+          "score": 1.0
+        },
+        {
+          "chunk_id": "c2590f44-b2b4-4b3f-94a3-75f302749ab2",
+          "doc_id": "0eaa1adf-c552-4687-a56e-0596eb596cb9",
+          "score": 1.0
+        },
+        {
+          "chunk_id": "24845884-3f20-4fe4-8744-644757bc1da1",
+          "doc_id": "0eaa1adf-c552-4687-a56e-0596eb596cb9",
+          "score": 1.0
+        },
+        {
+          "chunk_id": "94868d96-1270-4341-8e3f-141e32e854f2",
+          "doc_id": "0eaa1adf-c552-4687-a56e-0596eb596cb9",
+          "score": 1.0
+        },
+        {
+          "chunk_id": "14e0d99c-f606-4364-aa6f-7d30932df81a",
+          "doc_id": "e482a748-e725-4050-bf0d-4497c401507b",
+          "score": 1.0
+        },
+        {
+          "chunk_id": "8e4ee8a2-6d3b-4bc6-a208-4ed18f816493",
+          "doc_id": "86678816-5539-4cd7-adf4-3832939f7bfb",
+          "score": 1.0
+        }
+      ]
+    },
+    {
+      "question": "Can PostgreSQL scale workloads?",
+      "expected_document": "doc4.txt",
+      "found_rank": 0,
+      "retrieved": [
+        {
+          "chunk_id": "b4416c9d-6f72-45f9-b541-646ad203693b",
+          "doc_id": "86678816-5539-4cd7-adf4-3832939f7bfb",
+          "score": 1.0
+        },
+        {
+          "chunk_id": "e84d67db-7013-49dc-be9f-738f0bb4cb0a",
+          "doc_id": "86678816-5539-4cd7-adf4-3832939f7bfb",
+          "score": 1.0
+        },
+        {
+          "chunk_id": "76f0d5af-09e1-4d9b-8e70-4149ec1b214e",
+          "doc_id": "86678816-5539-4cd7-adf4-3832939f7bfb",
+          "score": 1.0
+        },
+        {
+          "chunk_id": "227280f3-64b4-445c-8672-7f428f976877",
+          "doc_id": "86678816-5539-4cd7-adf4-3832939f7bfb",
+          "score": 1.0
+        },
+        {
+          "chunk_id": "ddef6c9d-62d9-476c-a306-fa461d8dd3c2",
+          "doc_id": "0eaa1adf-c552-4687-a56e-0596eb596cb9",
+          "score": 1.0
+        },
+        {
+          "chunk_id": "c2590f44-b2b4-4b3f-94a3-75f302749ab2",
+          "doc_id": "0eaa1adf-c552-4687-a56e-0596eb596cb9",
+          "score": 1.0
+        },
+        {
+          "chunk_id": "24845884-3f20-4fe4-8744-644757bc1da1",
+          "doc_id": "0eaa1adf-c552-4687-a56e-0596eb596cb9",
+          "score": 1.0
+        },
+        {
+          "chunk_id": "94868d96-1270-4341-8e3f-141e32e854f2",
+          "doc_id": "0eaa1adf-c552-4687-a56e-0596eb596cb9",
+          "score": 1.0
+        },
+        {
+          "chunk_id": "14e0d99c-f606-4364-aa6f-7d30932df81a",
+          "doc_id": "e482a748-e725-4050-bf0d-4497c401507b",
+          "score": 1.0
+        },
+        {
+          "chunk_id": "8e4ee8a2-6d3b-4bc6-a208-4ed18f816493",
+          "doc_id": "86678816-5539-4cd7-adf4-3832939f7bfb",
+          "score": 1.0
+        }
+      ]
+    },
+    {
+      "question": "What is a neural network?",
+      "expected_document": "doc5.txt",
+      "found_rank": 0,
+      "retrieved": [
+        {
+          "chunk_id": "b4416c9d-6f72-45f9-b541-646ad203693b",
+          "doc_id": "86678816-5539-4cd7-adf4-3832939f7bfb",
+          "score": 1.0
+        },
+        {
+          "chunk_id": "e84d67db-7013-49dc-be9f-738f0bb4cb0a",
+          "doc_id": "86678816-5539-4cd7-adf4-3832939f7bfb",
+          "score": 1.0
+        },
+        {
+          "chunk_id": "76f0d5af-09e1-4d9b-8e70-4149ec1b214e",
+          "doc_id": "86678816-5539-4cd7-adf4-3832939f7bfb",
+          "score": 1.0
+        },
+        {
+          "chunk_id": "227280f3-64b4-445c-8672-7f428f976877",
+          "doc_id": "86678816-5539-4cd7-adf4-3832939f7bfb",
+          "score": 1.0
+        },
+        {
+          "chunk_id": "ddef6c9d-62d9-476c-a306-fa461d8dd3c2",
+          "doc_id": "0eaa1adf-c552-4687-a56e-0596eb596cb9",
+          "score": 1.0
+        },
+        {
+          "chunk_id": "c2590f44-b2b4-4b3f-94a3-75f302749ab2",
+          "doc_id": "0eaa1adf-c552-4687-a56e-0596eb596cb9",
+          "score": 1.0
+        },
+        {
+          "chunk_id": "24845884-3f20-4fe4-8744-644757bc1da1",
+          "doc_id": "0eaa1adf-c552-4687-a56e-0596eb596cb9",
+          "score": 1.0
+        },
+        {
+          "chunk_id": "94868d96-1270-4341-8e3f-141e32e854f2",
+          "doc_id": "0eaa1adf-c552-4687-a56e-0596eb596cb9",
+          "score": 1.0
+        },
+        {
+          "chunk_id": "14e0d99c-f606-4364-aa6f-7d30932df81a",
+          "doc_id": "e482a748-e725-4050-bf0d-4497c401507b",
+          "score": 1.0
+        },
+        {
+          "chunk_id": "8e4ee8a2-6d3b-4bc6-a208-4ed18f816493",
+          "doc_id": "86678816-5539-4cd7-adf4-3832939f7bfb",
+          "score": 1.0
+        }
+      ]
+    },
+    {
+      "question": "Are they composed of nodes?",
+      "expected_document": "doc5.txt",
+      "found_rank": 0,
+      "retrieved": [
+        {
+          "chunk_id": "b4416c9d-6f72-45f9-b541-646ad203693b",
+          "doc_id": "86678816-5539-4cd7-adf4-3832939f7bfb",
+          "score": 1.0
+        },
+        {
+          "chunk_id": "e84d67db-7013-49dc-be9f-738f0bb4cb0a",
+          "doc_id": "86678816-5539-4cd7-adf4-3832939f7bfb",
+          "score": 1.0
+        },
+        {
+          "chunk_id": "76f0d5af-09e1-4d9b-8e70-4149ec1b214e",
+          "doc_id": "86678816-5539-4cd7-adf4-3832939f7bfb",
+          "score": 1.0
+        },
+        {
+          "chunk_id": "227280f3-64b4-445c-8672-7f428f976877",
+          "doc_id": "86678816-5539-4cd7-adf4-3832939f7bfb",
+          "score": 1.0
+        },
+        {
+          "chunk_id": "ddef6c9d-62d9-476c-a306-fa461d8dd3c2",
+          "doc_id": "0eaa1adf-c552-4687-a56e-0596eb596cb9",
+          "score": 1.0
+        },
+        {
+          "chunk_id": "c2590f44-b2b4-4b3f-94a3-75f302749ab2",
+          "doc_id": "0eaa1adf-c552-4687-a56e-0596eb596cb9",
+          "score": 1.0
+        },
+        {
+          "chunk_id": "24845884-3f20-4fe4-8744-644757bc1da1",
+          "doc_id": "0eaa1adf-c552-4687-a56e-0596eb596cb9",
+          "score": 1.0
+        },
+        {
+          "chunk_id": "94868d96-1270-4341-8e3f-141e32e854f2",
+          "doc_id": "0eaa1adf-c552-4687-a56e-0596eb596cb9",
+          "score": 1.0
+        },
+        {
+          "chunk_id": "14e0d99c-f606-4364-aa6f-7d30932df81a",
+          "doc_id": "e482a748-e725-4050-bf0d-4497c401507b",
+          "score": 1.0
+        },
+        {
+          "chunk_id": "8e4ee8a2-6d3b-4bc6-a208-4ed18f816493",
+          "doc_id": "86678816-5539-4cd7-adf4-3832939f7bfb",
+          "score": 1.0
+        }
+      ]
+    },
+    {
+      "question": "What is the modern sense of a neural network?",
+      "expected_document": "doc5.txt",
+      "found_rank": 0,
+      "retrieved": [
+        {
+          "chunk_id": "b4416c9d-6f72-45f9-b541-646ad203693b",
+          "doc_id": "86678816-5539-4cd7-adf4-3832939f7bfb",
+          "score": 1.0
+        },
+        {
+          "chunk_id": "e84d67db-7013-49dc-be9f-738f0bb4cb0a",
+          "doc_id": "86678816-5539-4cd7-adf4-3832939f7bfb",
+          "score": 1.0
+        },
+        {
+          "chunk_id": "76f0d5af-09e1-4d9b-8e70-4149ec1b214e",
+          "doc_id": "86678816-5539-4cd7-adf4-3832939f7bfb",
+          "score": 1.0
+        },
+        {
+          "chunk_id": "227280f3-64b4-445c-8672-7f428f976877",
+          "doc_id": "86678816-5539-4cd7-adf4-3832939f7bfb",
+          "score": 1.0
+        },
+        {
+          "chunk_id": "ddef6c9d-62d9-476c-a306-fa461d8dd3c2",
+          "doc_id": "0eaa1adf-c552-4687-a56e-0596eb596cb9",
+          "score": 1.0
+        },
+        {
+          "chunk_id": "c2590f44-b2b4-4b3f-94a3-75f302749ab2",
+          "doc_id": "0eaa1adf-c552-4687-a56e-0596eb596cb9",
+          "score": 1.0
+        },
+        {
+          "chunk_id": "24845884-3f20-4fe4-8744-644757bc1da1",
+          "doc_id": "0eaa1adf-c552-4687-a56e-0596eb596cb9",
+          "score": 1.0
+        },
+        {
+          "chunk_id": "94868d96-1270-4341-8e3f-141e32e854f2",
+          "doc_id": "0eaa1adf-c552-4687-a56e-0596eb596cb9",
+          "score": 1.0
+        },
+        {
+          "chunk_id": "14e0d99c-f606-4364-aa6f-7d30932df81a",
+          "doc_id": "e482a748-e725-4050-bf0d-4497c401507b",
+          "score": 1.0
+        },
+        {
+          "chunk_id": "8e4ee8a2-6d3b-4bc6-a208-4ed18f816493",
+          "doc_id": "86678816-5539-4cd7-adf4-3832939f7bfb",
+          "score": 1.0
+        }
+      ]
+    },
+    {
+      "question": "Is a circuit of neurons a neural network?",
+      "expected_document": "doc5.txt",
+      "found_rank": 0,
+      "retrieved": [
+        {
+          "chunk_id": "b4416c9d-6f72-45f9-b541-646ad203693b",
+          "doc_id": "86678816-5539-4cd7-adf4-3832939f7bfb",
+          "score": 1.0
+        },
+        {
+          "chunk_id": "e84d67db-7013-49dc-be9f-738f0bb4cb0a",
+          "doc_id": "86678816-5539-4cd7-adf4-3832939f7bfb",
+          "score": 1.0
+        },
+        {
+          "chunk_id": "76f0d5af-09e1-4d9b-8e70-4149ec1b214e",
+          "doc_id": "86678816-5539-4cd7-adf4-3832939f7bfb",
+          "score": 1.0
+        },
+        {
+          "chunk_id": "227280f3-64b4-445c-8672-7f428f976877",
+          "doc_id": "86678816-5539-4cd7-adf4-3832939f7bfb",
+          "score": 1.0
+        },
+        {
+          "chunk_id": "ddef6c9d-62d9-476c-a306-fa461d8dd3c2",
+          "doc_id": "0eaa1adf-c552-4687-a56e-0596eb596cb9",
+          "score": 1.0
+        },
+        {
+          "chunk_id": "c2590f44-b2b4-4b3f-94a3-75f302749ab2",
+          "doc_id": "0eaa1adf-c552-4687-a56e-0596eb596cb9",
+          "score": 1.0
+        },
+        {
+          "chunk_id": "24845884-3f20-4fe4-8744-644757bc1da1",
+          "doc_id": "0eaa1adf-c552-4687-a56e-0596eb596cb9",
+          "score": 1.0
+        },
+        {
+          "chunk_id": "94868d96-1270-4341-8e3f-141e32e854f2",
+          "doc_id": "0eaa1adf-c552-4687-a56e-0596eb596cb9",
+          "score": 1.0
+        },
+        {
+          "chunk_id": "14e0d99c-f606-4364-aa6f-7d30932df81a",
+          "doc_id": "e482a748-e725-4050-bf0d-4497c401507b",
+          "score": 1.0
+        },
+        {
+          "chunk_id": "8e4ee8a2-6d3b-4bc6-a208-4ed18f816493",
+          "doc_id": "86678816-5539-4cd7-adf4-3832939f7bfb",
+          "score": 1.0
+        }
+      ]
+    }
+  ]
+}

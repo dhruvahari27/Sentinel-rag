@@ -13,6 +13,10 @@ class BaseEmbeddingProvider(ABC):
     @abstractmethod
     def embed_query(self, query: str) -> List[float]:
         pass
+        
+    @abstractmethod
+    def get_dimension(self) -> int:
+        pass
 
 class SentenceTransformerProvider(BaseEmbeddingProvider):
     def __init__(self, model_name: str = "sentence-transformers/all-MiniLM-L6-v2"):
@@ -27,6 +31,10 @@ class SentenceTransformerProvider(BaseEmbeddingProvider):
                 self._model = SentenceTransformer(self.model_name)
             except ImportError:
                 raise ImportError("sentence-transformers is not installed.")
+                
+    def get_dimension(self) -> int:
+        self._load_model()
+        return self._model.get_sentence_embedding_dimension()
                 
     def embed_texts(self, texts: List[str]) -> List[List[float]]:
         self._load_model()
@@ -43,7 +51,11 @@ class MockEmbeddingProvider(BaseEmbeddingProvider):
         self.dimensions = dimensions
         
     def embed_texts(self, texts: List[str]) -> List[List[float]]:
+        # Returns a list of dummy vectors
         return [[0.1] * self.dimensions for _ in texts]
+        
+    def get_dimension(self) -> int:
+        return self.dimensions
         
     def embed_query(self, query: str) -> List[float]:
         return [0.1] * self.dimensions
