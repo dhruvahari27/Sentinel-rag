@@ -7,11 +7,12 @@ class RetrievalChunk(BaseModel):
     text: str
     score: float
     rank: int
-    metadata_: Dict[str, Any] = Field(default_factory=dict, alias="metadata")
+    metadata: Dict[str, Any] = Field(default_factory=dict)
 
 class QueryRequest(BaseModel):
     question: str
     top_k: int = 5
+    retriever_type: str = "hybrid" # "vector", "bm25", or "hybrid"
 
 class QueryResponse(BaseModel):
     question: str

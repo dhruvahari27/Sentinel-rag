@@ -1,6 +1,7 @@
-from sqlalchemy import Column, String, Integer, DateTime, ForeignKey, Text, JSON
+from sqlalchemy import Column, String, Text, DateTime, Integer, JSON, ForeignKey, Index
 from sqlalchemy.orm import relationship
 from sqlalchemy.sql import func
+from sqlalchemy.dialects.postgresql import TSVECTOR
 from pgvector.sqlalchemy import Vector
 import uuid
 
@@ -29,7 +30,12 @@ class DocumentChunk(Base):
     chunk_index = Column(Integer, nullable=False)
     text = Column(Text, nullable=False)
     
+    # Full Text Search vector
+    text_search_vector = Column(TSVECTOR)
+    
     # 1536 is standard for text-embedding-3-small, but adjust as needed
     embedding = Column(Vector(1536))
     
     document = relationship("Document", back_populates="chunks")
+
+Index('ix_document_chunks_text_search_vector', DocumentChunk.text_search_vector, postgresql_using='gin')

@@ -152,4 +152,5 @@ This document defines the implementation phases for SENTINEL-RAG.
 - **Phase 2: Database + Development Infrastructure** - IMPLEMENTED
 - **Phase 3: Document Ingestion** - IMPLEMENTED
 - **Phase 4: Baseline RAG** - IMPLEMENTED
-- **Phase 5-17** - FUTURE
+- **Phase 5: Hybrid Retrieval** - IMPLEMENTED
+- **Phase 6-17** - FUTURE
