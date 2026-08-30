@@ -3,6 +3,7 @@ from fastapi.middleware.cors import CORSMiddleware
 from app.core.config import settings
 from app.core.logging import setup_logging
 from app.api.routes.health import router as health_router
+from app.api.routes.query import router as query_router
 from app.api import api_router
 
 setup_logging()
@@ -23,6 +24,7 @@ app.add_middleware(
 
 # Root health check endpoint as well as versioned API route
 app.include_router(health_router)
+app.include_router(query_router, prefix="/api/v1/query")
 app.include_router(api_router, prefix="/api/v1")
 
 if __name__ == "__main__":

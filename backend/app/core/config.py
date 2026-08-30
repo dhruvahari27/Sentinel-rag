@@ -15,7 +15,11 @@ class Settings(BaseSettings):
     embedding_provider: str = "openai"
     embedding_model: str = "text-embedding-3-small"
 
+    reranker_enabled: bool = True
     reranker_model: str = "cross-encoder/ms-marco-MiniLM-L-6-v2"
+    rerank_candidates: int = 20
+    rerank_top_k: int = 5
+    reranker_device: str = "cpu"
     
     log_level: str = "INFO"
 

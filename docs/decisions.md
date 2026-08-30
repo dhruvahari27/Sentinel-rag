@@ -79,3 +79,8 @@
 *   **Alternatives**: Build the app first, evaluate later via vibe-checks or external tools.
 *   **Trade-offs**: Slows initial feature delivery but guarantees measurable progress and prevents regression.
 *   **Consequences**: Every architectural change or orchestration rule tuning must be validated against the evaluation suite. No benchmark number may be fabricated.
+
+### ADR 002: Independent Reranking Stage
+**Context:** In Phase 8, we added cross-encoder reranking.
+**Decision:** Reranking is implemented as an independent stage after retrieval (Vector, BM25, Hybrid) rather than being buried within the retrievers themselves. We use a RetrievalPipeline to orchestrate this.
+**Rationale:** This maintains the independence of the base retrievers. It allows the system to easily toggle reranking on/off, keeps responsibilities separate, and sets the stage for the future adaptive Evidence Orchestrator which will dynamically decide whether to execute the reranking stage based on confidence or query complexity.
