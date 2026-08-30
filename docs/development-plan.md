@@ -150,6 +150,6 @@ This document defines the implementation phases for SENTINEL-RAG.
 - **Phase 0: Planning** - IMPLEMENTED
 - **Phase 1: Repository/backend skeleton** - IMPLEMENTED
 - **Phase 2: Database + Development Infrastructure** - IMPLEMENTED
-- **Phase 3: Document Ingestion** - PLANNED
+- **Phase 3: Document Ingestion** - IMPLEMENTED
 - **Phase 4: Baseline RAG** - PLANNED
 - **Phase 5-17** - FUTURE
