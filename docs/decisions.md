@@ -79,3 +79,11 @@
 *   **Alternatives**: Build the app first, evaluate later via vibe-checks or external tools.
 *   **Trade-offs**: Slows initial feature delivery but guarantees measurable progress and prevents regression.
 *   **Consequences**: Every architectural change or orchestration rule tuning must be validated against the evaluation suite. No benchmark number may be fabricated.
+
+## ADR-011: Why PostgreSQL + pgvector + Redis for Development Infrastructure
+*   **Status**: Accepted
+*   **Context**: We need to establish a local development environment for SENTINEL-RAG Phase 2 that mirrors our target production capabilities.
+*   **Decision**: Use PostgreSQL (with pgvector) and Redis via Docker Compose.
+*   **Alternatives**: SQLite/DuckDB for local development, or cloud-hosted DBs.
+*   **Trade-offs**: Docker Compose introduces a dependency on Docker for local development, which can be heavy. However, it ensures parity with production architectures, avoids the limitations of local file-based databases (like SQLite's lack of pgvector), and removes network latency/costs of cloud DBs.
+*   **Consequences**: Developers must run `docker compose up -d` before starting the application locally. Database connection strings are managed via environment variables.
