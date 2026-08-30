@@ -1,0 +1,399 @@
+{
+  "version": "v1.0",
+  "dataset_name": "rag_eval_v1",
+  "corpus_identifier": "synthetic_5_docs",
+  "creation_date": "2026-08-30",
+  "question_count": 30,
+  "questions": [
+    {
+      "id": "Q001",
+      "question": "Who created Python?",
+      "expected_answer": "Guido van Rossum",
+      "relevant_document_ids": [
+        "doc1.txt"
+      ],
+      "relevant_chunk_ids": [],
+      "answerable": true,
+      "question_type": "factual",
+      "difficulty": "easy",
+      "metadata": {}
+    },
+    {
+      "id": "Q002",
+      "question": "When was Python released?",
+      "expected_answer": "1991",
+      "relevant_document_ids": [
+        "doc1.txt"
+      ],
+      "relevant_chunk_ids": [],
+      "answerable": true,
+      "question_type": "temporal",
+      "difficulty": "easy",
+      "metadata": {}
+    },
+    {
+      "id": "Q003",
+      "question": "What is Python's design philosophy?",
+      "expected_answer": "code readability",
+      "relevant_document_ids": [
+        "doc1.txt"
+      ],
+      "relevant_chunk_ids": [],
+      "answerable": true,
+      "question_type": "factual",
+      "difficulty": "medium",
+      "metadata": {}
+    },
+    {
+      "id": "Q004",
+      "question": "Is Python high-level?",
+      "expected_answer": "Yes",
+      "relevant_document_ids": [
+        "doc1.txt"
+      ],
+      "relevant_chunk_ids": [],
+      "answerable": true,
+      "question_type": "factual",
+      "difficulty": "easy",
+      "metadata": {}
+    },
+    {
+      "id": "Q005",
+      "question": "What animal jumps over the dog?",
+      "expected_answer": "fox",
+      "relevant_document_ids": [
+        "doc2.txt"
+      ],
+      "relevant_chunk_ids": [],
+      "answerable": true,
+      "question_type": "factual",
+      "difficulty": "easy",
+      "metadata": {}
+    },
+    {
+      "id": "Q006",
+      "question": "What is a pangram?",
+      "expected_answer": "sentence that contains all of the letters",
+      "relevant_document_ids": [
+        "doc2.txt"
+      ],
+      "relevant_chunk_ids": [],
+      "answerable": true,
+      "question_type": "definition",
+      "difficulty": "medium",
+      "metadata": {}
+    },
+    {
+      "id": "Q007",
+      "question": "Does the sentence contain all letters?",
+      "expected_answer": "Yes",
+      "relevant_document_ids": [
+        "doc2.txt"
+      ],
+      "relevant_chunk_ids": [],
+      "answerable": true,
+      "question_type": "factual",
+      "difficulty": "easy",
+      "metadata": {}
+    },
+    {
+      "id": "Q008",
+      "question": "What color is the fox?",
+      "expected_answer": "brown",
+      "relevant_document_ids": [
+        "doc2.txt"
+      ],
+      "relevant_chunk_ids": [],
+      "answerable": true,
+      "question_type": "factual",
+      "difficulty": "easy",
+      "metadata": {}
+    },
+    {
+      "id": "Q009",
+      "question": "What is machine learning?",
+      "expected_answer": "study of computer algorithms",
+      "relevant_document_ids": [
+        "doc3.txt"
+      ],
+      "relevant_chunk_ids": [],
+      "answerable": true,
+      "question_type": "definition",
+      "difficulty": "easy",
+      "metadata": {}
+    },
+    {
+      "id": "Q010",
+      "question": "How do algorithms improve?",
+      "expected_answer": "automatically through experience",
+      "relevant_document_ids": [
+        "doc3.txt"
+      ],
+      "relevant_chunk_ids": [],
+      "answerable": true,
+      "question_type": "factual",
+      "difficulty": "medium",
+      "metadata": {}
+    },
+    {
+      "id": "Q011",
+      "question": "Is ML a subset of AI?",
+      "expected_answer": "Yes",
+      "relevant_document_ids": [
+        "doc3.txt"
+      ],
+      "relevant_chunk_ids": [],
+      "answerable": true,
+      "question_type": "factual",
+      "difficulty": "easy",
+      "metadata": {}
+    },
+    {
+      "id": "Q012",
+      "question": "Do algorithms improve automatically?",
+      "expected_answer": "Yes",
+      "relevant_document_ids": [
+        "doc3.txt"
+      ],
+      "relevant_chunk_ids": [],
+      "answerable": true,
+      "question_type": "factual",
+      "difficulty": "easy",
+      "metadata": {}
+    },
+    {
+      "id": "Q013",
+      "question": "What is PostgreSQL?",
+      "expected_answer": "relational database system",
+      "relevant_document_ids": [
+        "doc4.txt"
+      ],
+      "relevant_chunk_ids": [],
+      "answerable": true,
+      "question_type": "definition",
+      "difficulty": "easy",
+      "metadata": {}
+    },
+    {
+      "id": "Q014",
+      "question": "Is PostgreSQL open source?",
+      "expected_answer": "Yes",
+      "relevant_document_ids": [
+        "doc4.txt"
+      ],
+      "relevant_chunk_ids": [],
+      "answerable": true,
+      "question_type": "factual",
+      "difficulty": "easy",
+      "metadata": {}
+    },
+    {
+      "id": "Q015",
+      "question": "What language does PostgreSQL extend?",
+      "expected_answer": "SQL",
+      "relevant_document_ids": [
+        "doc4.txt"
+      ],
+      "relevant_chunk_ids": [],
+      "answerable": true,
+      "question_type": "factual",
+      "difficulty": "medium",
+      "metadata": {}
+    },
+    {
+      "id": "Q016",
+      "question": "Can PostgreSQL scale workloads?",
+      "expected_answer": "Yes",
+      "relevant_document_ids": [
+        "doc4.txt"
+      ],
+      "relevant_chunk_ids": [],
+      "answerable": true,
+      "question_type": "factual",
+      "difficulty": "easy",
+      "metadata": {}
+    },
+    {
+      "id": "Q017",
+      "question": "What is a neural network?",
+      "expected_answer": "network or circuit of neurons",
+      "relevant_document_ids": [
+        "doc5.txt"
+      ],
+      "relevant_chunk_ids": [],
+      "answerable": true,
+      "question_type": "definition",
+      "difficulty": "easy",
+      "metadata": {}
+    },
+    {
+      "id": "Q018",
+      "question": "Are they composed of nodes?",
+      "expected_answer": "Yes",
+      "relevant_document_ids": [
+        "doc5.txt"
+      ],
+      "relevant_chunk_ids": [],
+      "answerable": true,
+      "question_type": "factual",
+      "difficulty": "easy",
+      "metadata": {}
+    },
+    {
+      "id": "Q019",
+      "question": "What is the modern sense of a neural network?",
+      "expected_answer": "artificial neural network",
+      "relevant_document_ids": [
+        "doc5.txt"
+      ],
+      "relevant_chunk_ids": [],
+      "answerable": true,
+      "question_type": "definition",
+      "difficulty": "medium",
+      "metadata": {}
+    },
+    {
+      "id": "Q020",
+      "question": "Is a circuit of neurons a neural network?",
+      "expected_answer": "Yes",
+      "relevant_document_ids": [
+        "doc5.txt"
+      ],
+      "relevant_chunk_ids": [],
+      "answerable": true,
+      "question_type": "factual",
+      "difficulty": "easy",
+      "metadata": {}
+    },
+    {
+      "id": "Q021",
+      "question": "What is an example of an interpreted language?",
+      "expected_answer": "Python",
+      "relevant_document_ids": [
+        "doc1.txt"
+      ],
+      "relevant_chunk_ids": [],
+      "answerable": true,
+      "question_type": "factual",
+      "difficulty": "easy",
+      "metadata": {}
+    },
+    {
+      "id": "Q022",
+      "question": "Is Python compiled or interpreted?",
+      "expected_answer": "interpreted",
+      "relevant_document_ids": [
+        "doc1.txt"
+      ],
+      "relevant_chunk_ids": [],
+      "answerable": true,
+      "question_type": "comparison",
+      "difficulty": "medium",
+      "metadata": {}
+    },
+    {
+      "id": "Q023",
+      "question": "Does the lazy dog jump?",
+      "expected_answer": "No",
+      "relevant_document_ids": [
+        "doc2.txt"
+      ],
+      "relevant_chunk_ids": [],
+      "answerable": true,
+      "question_type": "factual",
+      "difficulty": "easy",
+      "metadata": {}
+    },
+    {
+      "id": "Q024",
+      "question": "What is AI?",
+      "expected_answer": "artificial intelligence",
+      "relevant_document_ids": [
+        "doc3.txt"
+      ],
+      "relevant_chunk_ids": [],
+      "answerable": true,
+      "question_type": "definition",
+      "difficulty": "hard",
+      "metadata": {}
+    },
+    {
+      "id": "Q025",
+      "question": "Are workloads scaled safely in Postgres?",
+      "expected_answer": "Yes",
+      "relevant_document_ids": [
+        "doc4.txt"
+      ],
+      "relevant_chunk_ids": [],
+      "answerable": true,
+      "question_type": "factual",
+      "difficulty": "easy",
+      "metadata": {}
+    },
+    {
+      "id": "Q026",
+      "question": "Is Postgres an object-relational DB?",
+      "expected_answer": "Yes",
+      "relevant_document_ids": [
+        "doc4.txt"
+      ],
+      "relevant_chunk_ids": [],
+      "answerable": true,
+      "question_type": "factual",
+      "difficulty": "easy",
+      "metadata": {}
+    },
+    {
+      "id": "Q027",
+      "question": "Who developed Python in 1991?",
+      "expected_answer": "Guido van Rossum",
+      "relevant_document_ids": [
+        "doc1.txt"
+      ],
+      "relevant_chunk_ids": [],
+      "answerable": true,
+      "question_type": "multi-hop",
+      "difficulty": "hard",
+      "metadata": {}
+    },
+    {
+      "id": "Q028",
+      "question": "Do nodes exist in artificial neural networks?",
+      "expected_answer": "Yes",
+      "relevant_document_ids": [
+        "doc5.txt"
+      ],
+      "relevant_chunk_ids": [],
+      "answerable": true,
+      "question_type": "factual",
+      "difficulty": "medium",
+      "metadata": {}
+    },
+    {
+      "id": "Q029",
+      "question": "Is machine learning related to algorithms?",
+      "expected_answer": "Yes",
+      "relevant_document_ids": [
+        "doc3.txt"
+      ],
+      "relevant_chunk_ids": [],
+      "answerable": true,
+      "question_type": "factual",
+      "difficulty": "easy",
+      "metadata": {}
+    },
+    {
+      "id": "Q030",
+      "question": "What alphabet does the pangram use?",
+      "expected_answer": "English",
+      "relevant_document_ids": [
+        "doc2.txt"
+      ],
+      "relevant_chunk_ids": [],
+      "answerable": true,
+      "question_type": "factual",
+      "difficulty": "easy",
+      "metadata": {}
+    }
+  ]
+}

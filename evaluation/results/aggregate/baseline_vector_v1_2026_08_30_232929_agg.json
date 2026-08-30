@@ -1,0 +1,51 @@
+{
+  "run_id": "baseline_vector_v1_2026_08_30_232929",
+  "dataset_name": "rag_eval_v1",
+  "dataset_version": "v1.0",
+  "total_questions": 30,
+  "retrieval_metrics": {
+    "Overall MRR": 0.29555555555555557,
+    "Overall Recall@3": 0.23333333333333334,
+    "Overall Precision@3": 0.07777777777777777,
+    "Overall Recall@5": 0.43333333333333335,
+    "Overall Precision@5": 0.08666666666666667,
+    "Overall Recall@10": 0.6333333333333333,
+    "Overall Precision@10": 0.06333333333333334
+  },
+  "generation_metrics": {
+    "Overall citation_coverage": 0.0,
+    "Overall exact_correctness": 0.03333333333333333
+  },
+  "latency_metrics": {
+    "Average latency": 0.004035337766011556,
+    "P50 latency": 0.003998875617980957,
+    "P95 latency": 0.004476308822631836
+  },
+  "token_usage": {
+    "Average input tokens": 0.0,
+    "Average output tokens": 0.0
+  },
+  "cost": "NOT_MEASURED",
+  "subgroup_metrics": {
+    "factual": {
+      "MRR": 0.25925925925925924,
+      "Recall@3": 0.19047619047619047,
+      "Precision@3": 0.06349206349206349,
+      "Recall@5": 0.42857142857142855,
+      "Precision@5": 0.08571428571428572,
+      "Recall@10": 0.6190476190476191,
+      "Precision@10": 0.06190476190476191,
+      "count": 21
+    },
+    "definition": {
+      "MRR": 0.07037037037037037,
+      "Recall@3": 0.0,
+      "Precision@3": 0.0,
+      "Recall@5": 0.16666666666666666,
+      "Precision@5": 0.03333333333333333,
+      "Recall@10": 0.5,
+      "Precision@10": 0.05000000000000001,
+      "count": 6
+    }
+  }
+}

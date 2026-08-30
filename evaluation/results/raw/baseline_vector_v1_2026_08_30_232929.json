@@ -1,0 +1,2152 @@
+{
+  "run_id": "baseline_vector_v1_2026_08_30_232929",
+  "timestamp": "2026-08-30T23:29:29.963020",
+  "config": {
+    "run_name": "baseline_vector_v1",
+    "dataset": "evaluation/datasets/rag_eval_v1.json",
+    "retriever": "vector",
+    "top_k_evaluations": [
+      3,
+      5,
+      10
+    ],
+    "embedding_model": "mock-embeddings-1536",
+    "chunking_strategy": "simple_text_50_10",
+    "evaluate_generation": true
+  },
+  "dataset_version": "v1.0",
+  "dataset_name": "rag_eval_v1",
+  "total_questions": 30,
+  "results": [
+    {
+      "question_id": "Q001",
+      "question": "Who created Python?",
+      "question_type": "factual",
+      "difficulty": "easy",
+      "retrieved_results": [
+        {
+          "doc_id": "82ccae2d-e75f-4093-a2aa-7cc015710996",
+          "score": 1.0
+        },
+        {
+          "doc_id": "82ccae2d-e75f-4093-a2aa-7cc015710996",
+          "score": 1.0
+        },
+        {
+          "doc_id": "82ccae2d-e75f-4093-a2aa-7cc015710996",
+          "score": 1.0
+        },
+        {
+          "doc_id": "82ccae2d-e75f-4093-a2aa-7cc015710996",
+          "score": 1.0
+        },
+        {
+          "doc_id": "2cf651f3-9f47-440a-9db5-78cb8fb45c16",
+          "score": 1.0
+        },
+        {
+          "doc_id": "2cf651f3-9f47-440a-9db5-78cb8fb45c16",
+          "score": 1.0
+        },
+        {
+          "doc_id": "2cf651f3-9f47-440a-9db5-78cb8fb45c16",
+          "score": 1.0
+        },
+        {
+          "doc_id": "2cf651f3-9f47-440a-9db5-78cb8fb45c16",
+          "score": 1.0
+        },
+        {
+          "doc_id": "744f96f1-2354-402e-8971-f9c172f29021",
+          "score": 1.0
+        },
+        {
+          "doc_id": "82ccae2d-e75f-4093-a2aa-7cc015710996",
+          "score": 1.0
+        }
+      ],
+      "relevant_documents": [
+        "doc1.txt"
+      ],
+      "metrics": {
+        "MRR": 1.0,
+        "Recall@3": 1.0,
+        "Precision@3": 0.3333333333333333,
+        "Recall@5": 1.0,
+        "Precision@5": 0.2,
+        "Recall@10": 1.0,
+        "Precision@10": 0.1
+      },
+      "generation_metrics": {
+        "citation_coverage": 0.0,
+        "exact_correctness": 0.0
+      },
+      "generated_answer": "The provided documents do not contain enough information to answer the question.",
+      "latency_sec": 0.004476308822631836,
+      "tokens": {
+        "prompt": 4,
+        "completion": 20,
+        "total": 24
+      }
+    },
+    {
+      "question_id": "Q002",
+      "question": "When was Python released?",
+      "question_type": "temporal",
+      "difficulty": "easy",
+      "retrieved_results": [
+        {
+          "doc_id": "82ccae2d-e75f-4093-a2aa-7cc015710996",
+          "score": 1.0
+        },
+        {
+          "doc_id": "82ccae2d-e75f-4093-a2aa-7cc015710996",
+          "score": 1.0
+        },
+        {
+          "doc_id": "82ccae2d-e75f-4093-a2aa-7cc015710996",
+          "score": 1.0
+        },
+        {
+          "doc_id": "82ccae2d-e75f-4093-a2aa-7cc015710996",
+          "score": 1.0
+        },
+        {
+          "doc_id": "2cf651f3-9f47-440a-9db5-78cb8fb45c16",
+          "score": 1.0
+        },
+        {
+          "doc_id": "2cf651f3-9f47-440a-9db5-78cb8fb45c16",
+          "score": 1.0
+        },
+        {
+          "doc_id": "2cf651f3-9f47-440a-9db5-78cb8fb45c16",
+          "score": 1.0
+        },
+        {
+          "doc_id": "2cf651f3-9f47-440a-9db5-78cb8fb45c16",
+          "score": 1.0
+        },
+        {
+          "doc_id": "744f96f1-2354-402e-8971-f9c172f29021",
+          "score": 1.0
+        },
+        {
+          "doc_id": "82ccae2d-e75f-4093-a2aa-7cc015710996",
+          "score": 1.0
+        }
+      ],
+      "relevant_documents": [
+        "doc1.txt"
+      ],
+      "metrics": {
+        "MRR": 1.0,
+        "Recall@3": 1.0,
+        "Precision@3": 0.3333333333333333,
+        "Recall@5": 1.0,
+        "Precision@5": 0.2,
+        "Recall@10": 1.0,
+        "Precision@10": 0.1
+      },
+      "generation_metrics": {
+        "citation_coverage": 0.0,
+        "exact_correctness": 0.0
+      },
+      "generated_answer": "The provided documents do not contain enough information to answer the question.",
+      "latency_sec": 0.004221677780151367,
+      "tokens": {
+        "prompt": 6,
+        "completion": 20,
+        "total": 26
+      }
+    },
+    {
+      "question_id": "Q003",
+      "question": "What is Python's design philosophy?",
+      "question_type": "factual",
+      "difficulty": "medium",
+      "retrieved_results": [
+        {
+          "doc_id": "82ccae2d-e75f-4093-a2aa-7cc015710996",
+          "score": 1.0
+        },
+        {
+          "doc_id": "82ccae2d-e75f-4093-a2aa-7cc015710996",
+          "score": 1.0
+        },
+        {
+          "doc_id": "82ccae2d-e75f-4093-a2aa-7cc015710996",
+          "score": 1.0
+        },
+        {
+          "doc_id": "82ccae2d-e75f-4093-a2aa-7cc015710996",
+          "score": 1.0
+        },
+        {
+          "doc_id": "2cf651f3-9f47-440a-9db5-78cb8fb45c16",
+          "score": 1.0
+        },
+        {
+          "doc_id": "2cf651f3-9f47-440a-9db5-78cb8fb45c16",
+          "score": 1.0
+        },
+        {
+          "doc_id": "2cf651f3-9f47-440a-9db5-78cb8fb45c16",
+          "score": 1.0
+        },
+        {
+          "doc_id": "2cf651f3-9f47-440a-9db5-78cb8fb45c16",
+          "score": 1.0
+        },
+        {
+          "doc_id": "744f96f1-2354-402e-8971-f9c172f29021",
+          "score": 1.0
+        },
+        {
+          "doc_id": "82ccae2d-e75f-4093-a2aa-7cc015710996",
+          "score": 1.0
+        }
+      ],
+      "relevant_documents": [
+        "doc1.txt"
+      ],
+      "metrics": {
+        "MRR": 1.0,
+        "Recall@3": 1.0,
+        "Precision@3": 0.3333333333333333,
+        "Recall@5": 1.0,
+        "Precision@5": 0.2,
+        "Recall@10": 1.0,
+        "Precision@10": 0.1
+      },
+      "generation_metrics": {
+        "citation_coverage": 0.0,
+        "exact_correctness": 0.0
+      },
+      "generated_answer": "The provided documents do not contain enough information to answer the question.",
+      "latency_sec": 0.005071878433227539,
+      "tokens": {
+        "prompt": 8,
+        "completion": 20,
+        "total": 28
+      }
+    },
+    {
+      "question_id": "Q004",
+      "question": "Is Python high-level?",
+      "question_type": "factual",
+      "difficulty": "easy",
+      "retrieved_results": [
+        {
+          "doc_id": "82ccae2d-e75f-4093-a2aa-7cc015710996",
+          "score": 1.0
+        },
+        {
+          "doc_id": "82ccae2d-e75f-4093-a2aa-7cc015710996",
+          "score": 1.0
+        },
+        {
+          "doc_id": "82ccae2d-e75f-4093-a2aa-7cc015710996",
+          "score": 1.0
+        },
+        {
+          "doc_id": "82ccae2d-e75f-4093-a2aa-7cc015710996",
+          "score": 1.0
+        },
+        {
+          "doc_id": "2cf651f3-9f47-440a-9db5-78cb8fb45c16",
+          "score": 1.0
+        },
+        {
+          "doc_id": "2cf651f3-9f47-440a-9db5-78cb8fb45c16",
+          "score": 1.0
+        },
+        {
+          "doc_id": "2cf651f3-9f47-440a-9db5-78cb8fb45c16",
+          "score": 1.0
+        },
+        {
+          "doc_id": "2cf651f3-9f47-440a-9db5-78cb8fb45c16",
+          "score": 1.0
+        },
+        {
+          "doc_id": "744f96f1-2354-402e-8971-f9c172f29021",
+          "score": 1.0
+        },
+        {
+          "doc_id": "82ccae2d-e75f-4093-a2aa-7cc015710996",
+          "score": 1.0
+        }
+      ],
+      "relevant_documents": [
+        "doc1.txt"
+      ],
+      "metrics": {
+        "MRR": 1.0,
+        "Recall@3": 1.0,
+        "Precision@3": 0.3333333333333333,
+        "Recall@5": 1.0,
+        "Precision@5": 0.2,
+        "Recall@10": 1.0,
+        "Precision@10": 0.1
+      },
+      "generation_metrics": {
+        "citation_coverage": 0.0,
+        "exact_correctness": 0.0
+      },
+      "generated_answer": "The provided documents do not contain enough information to answer the question.",
+      "latency_sec": 0.003974437713623047,
+      "tokens": {
+        "prompt": 5,
+        "completion": 20,
+        "total": 25
+      }
+    },
+    {
+      "question_id": "Q005",
+      "question": "What animal jumps over the dog?",
+      "question_type": "factual",
+      "difficulty": "easy",
+      "retrieved_results": [
+        {
+          "doc_id": "82ccae2d-e75f-4093-a2aa-7cc015710996",
+          "score": 1.0
+        },
+        {
+          "doc_id": "82ccae2d-e75f-4093-a2aa-7cc015710996",
+          "score": 1.0
+        },
+        {
+          "doc_id": "82ccae2d-e75f-4093-a2aa-7cc015710996",
+          "score": 1.0
+        },
+        {
+          "doc_id": "82ccae2d-e75f-4093-a2aa-7cc015710996",
+          "score": 1.0
+        },
+        {
+          "doc_id": "2cf651f3-9f47-440a-9db5-78cb8fb45c16",
+          "score": 1.0
+        },
+        {
+          "doc_id": "2cf651f3-9f47-440a-9db5-78cb8fb45c16",
+          "score": 1.0
+        },
+        {
+          "doc_id": "2cf651f3-9f47-440a-9db5-78cb8fb45c16",
+          "score": 1.0
+        },
+        {
+          "doc_id": "2cf651f3-9f47-440a-9db5-78cb8fb45c16",
+          "score": 1.0
+        },
+        {
+          "doc_id": "744f96f1-2354-402e-8971-f9c172f29021",
+          "score": 1.0
+        },
+        {
+          "doc_id": "82ccae2d-e75f-4093-a2aa-7cc015710996",
+          "score": 1.0
+        }
+      ],
+      "relevant_documents": [
+        "doc2.txt"
+      ],
+      "metrics": {
+        "MRR": 0.2,
+        "Recall@3": 0.0,
+        "Precision@3": 0.0,
+        "Recall@5": 1.0,
+        "Precision@5": 0.2,
+        "Recall@10": 1.0,
+        "Precision@10": 0.1
+      },
+      "generation_metrics": {
+        "citation_coverage": 0.0,
+        "exact_correctness": 0.0
+      },
+      "generated_answer": "The provided documents do not contain enough information to answer the question.",
+      "latency_sec": 0.0039560794830322266,
+      "tokens": {
+        "prompt": 7,
+        "completion": 20,
+        "total": 27
+      }
+    },
+    {
+      "question_id": "Q006",
+      "question": "What is a pangram?",
+      "question_type": "definition",
+      "difficulty": "medium",
+      "retrieved_results": [
+        {
+          "doc_id": "82ccae2d-e75f-4093-a2aa-7cc015710996",
+          "score": 1.0
+        },
+        {
+          "doc_id": "82ccae2d-e75f-4093-a2aa-7cc015710996",
+          "score": 1.0
+        },
+        {
+          "doc_id": "82ccae2d-e75f-4093-a2aa-7cc015710996",
+          "score": 1.0
+        },
+        {
+          "doc_id": "82ccae2d-e75f-4093-a2aa-7cc015710996",
+          "score": 1.0
+        },
+        {
+          "doc_id": "2cf651f3-9f47-440a-9db5-78cb8fb45c16",
+          "score": 1.0
+        },
+        {
+          "doc_id": "2cf651f3-9f47-440a-9db5-78cb8fb45c16",
+          "score": 1.0
+        },
+        {
+          "doc_id": "2cf651f3-9f47-440a-9db5-78cb8fb45c16",
+          "score": 1.0
+        },
+        {
+          "doc_id": "2cf651f3-9f47-440a-9db5-78cb8fb45c16",
+          "score": 1.0
+        },
+        {
+          "doc_id": "744f96f1-2354-402e-8971-f9c172f29021",
+          "score": 1.0
+        },
+        {
+          "doc_id": "82ccae2d-e75f-4093-a2aa-7cc015710996",
+          "score": 1.0
+        }
+      ],
+      "relevant_documents": [
+        "doc2.txt"
+      ],
+      "metrics": {
+        "MRR": 0.2,
+        "Recall@3": 0.0,
+        "Precision@3": 0.0,
+        "Recall@5": 1.0,
+        "Precision@5": 0.2,
+        "Recall@10": 1.0,
+        "Precision@10": 0.1
+      },
+      "generation_metrics": {
+        "citation_coverage": 0.0,
+        "exact_correctness": 0.0
+      },
+      "generated_answer": "The provided documents do not contain enough information to answer the question.",
+      "latency_sec": 0.0037550926208496094,
+      "tokens": {
+        "prompt": 4,
+        "completion": 20,
+        "total": 24
+      }
+    },
+    {
+      "question_id": "Q007",
+      "question": "Does the sentence contain all letters?",
+      "question_type": "factual",
+      "difficulty": "easy",
+      "retrieved_results": [
+        {
+          "doc_id": "82ccae2d-e75f-4093-a2aa-7cc015710996",
+          "score": 1.0
+        },
+        {
+          "doc_id": "82ccae2d-e75f-4093-a2aa-7cc015710996",
+          "score": 1.0
+        },
+        {
+          "doc_id": "82ccae2d-e75f-4093-a2aa-7cc015710996",
+          "score": 1.0
+        },
+        {
+          "doc_id": "82ccae2d-e75f-4093-a2aa-7cc015710996",
+          "score": 1.0
+        },
+        {
+          "doc_id": "2cf651f3-9f47-440a-9db5-78cb8fb45c16",
+          "score": 1.0
+        },
+        {
+          "doc_id": "2cf651f3-9f47-440a-9db5-78cb8fb45c16",
+          "score": 1.0
+        },
+        {
+          "doc_id": "2cf651f3-9f47-440a-9db5-78cb8fb45c16",
+          "score": 1.0
+        },
+        {
+          "doc_id": "2cf651f3-9f47-440a-9db5-78cb8fb45c16",
+          "score": 1.0
+        },
+        {
+          "doc_id": "744f96f1-2354-402e-8971-f9c172f29021",
+          "score": 1.0
+        },
+        {
+          "doc_id": "82ccae2d-e75f-4093-a2aa-7cc015710996",
+          "score": 1.0
+        }
+      ],
+      "relevant_documents": [
+        "doc2.txt"
+      ],
+      "metrics": {
+        "MRR": 0.2,
+        "Recall@3": 0.0,
+        "Precision@3": 0.0,
+        "Recall@5": 1.0,
+        "Precision@5": 0.2,
+        "Recall@10": 1.0,
+        "Precision@10": 0.1
+      },
+      "generation_metrics": {
+        "citation_coverage": 0.0,
+        "exact_correctness": 0.0
+      },
+      "generated_answer": "The provided documents do not contain enough information to answer the question.",
+      "latency_sec": 0.004036664962768555,
+      "tokens": {
+        "prompt": 9,
+        "completion": 20,
+        "total": 29
+      }
+    },
+    {
+      "question_id": "Q008",
+      "question": "What color is the fox?",
+      "question_type": "factual",
+      "difficulty": "easy",
+      "retrieved_results": [
+        {
+          "doc_id": "82ccae2d-e75f-4093-a2aa-7cc015710996",
+          "score": 1.0
+        },
+        {
+          "doc_id": "82ccae2d-e75f-4093-a2aa-7cc015710996",
+          "score": 1.0
+        },
+        {
+          "doc_id": "82ccae2d-e75f-4093-a2aa-7cc015710996",
+          "score": 1.0
+        },
+        {
+          "doc_id": "82ccae2d-e75f-4093-a2aa-7cc015710996",
+          "score": 1.0
+        },
+        {
+          "doc_id": "2cf651f3-9f47-440a-9db5-78cb8fb45c16",
+          "score": 1.0
+        },
+        {
+          "doc_id": "2cf651f3-9f47-440a-9db5-78cb8fb45c16",
+          "score": 1.0
+        },
+        {
+          "doc_id": "2cf651f3-9f47-440a-9db5-78cb8fb45c16",
+          "score": 1.0
+        },
+        {
+          "doc_id": "2cf651f3-9f47-440a-9db5-78cb8fb45c16",
+          "score": 1.0
+        },
+        {
+          "doc_id": "744f96f1-2354-402e-8971-f9c172f29021",
+          "score": 1.0
+        },
+        {
+          "doc_id": "82ccae2d-e75f-4093-a2aa-7cc015710996",
+          "score": 1.0
+        }
+      ],
+      "relevant_documents": [
+        "doc2.txt"
+      ],
+      "metrics": {
+        "MRR": 0.2,
+        "Recall@3": 0.0,
+        "Precision@3": 0.0,
+        "Recall@5": 1.0,
+        "Precision@5": 0.2,
+        "Recall@10": 1.0,
+        "Precision@10": 0.1
+      },
+      "generation_metrics": {
+        "citation_coverage": 0.0,
+        "exact_correctness": 0.0
+      },
+      "generated_answer": "The provided documents do not contain enough information to answer the question.",
+      "latency_sec": 0.003972053527832031,
+      "tokens": {
+        "prompt": 5,
+        "completion": 20,
+        "total": 25
+      }
+    },
+    {
+      "question_id": "Q009",
+      "question": "What is machine learning?",
+      "question_type": "definition",
+      "difficulty": "easy",
+      "retrieved_results": [
+        {
+          "doc_id": "82ccae2d-e75f-4093-a2aa-7cc015710996",
+          "score": 1.0
+        },
+        {
+          "doc_id": "82ccae2d-e75f-4093-a2aa-7cc015710996",
+          "score": 1.0
+        },
+        {
+          "doc_id": "82ccae2d-e75f-4093-a2aa-7cc015710996",
+          "score": 1.0
+        },
+        {
+          "doc_id": "82ccae2d-e75f-4093-a2aa-7cc015710996",
+          "score": 1.0
+        },
+        {
+          "doc_id": "2cf651f3-9f47-440a-9db5-78cb8fb45c16",
+          "score": 1.0
+        },
+        {
+          "doc_id": "2cf651f3-9f47-440a-9db5-78cb8fb45c16",
+          "score": 1.0
+        },
+        {
+          "doc_id": "2cf651f3-9f47-440a-9db5-78cb8fb45c16",
+          "score": 1.0
+        },
+        {
+          "doc_id": "2cf651f3-9f47-440a-9db5-78cb8fb45c16",
+          "score": 1.0
+        },
+        {
+          "doc_id": "744f96f1-2354-402e-8971-f9c172f29021",
+          "score": 1.0
+        },
+        {
+          "doc_id": "82ccae2d-e75f-4093-a2aa-7cc015710996",
+          "score": 1.0
+        }
+      ],
+      "relevant_documents": [
+        "doc3.txt"
+      ],
+      "metrics": {
+        "MRR": 0.1111111111111111,
+        "Recall@3": 0.0,
+        "Precision@3": 0.0,
+        "Recall@5": 0.0,
+        "Precision@5": 0.0,
+        "Recall@10": 1.0,
+        "Precision@10": 0.1
+      },
+      "generation_metrics": {
+        "citation_coverage": 0.0,
+        "exact_correctness": 0.0
+      },
+      "generated_answer": "The provided documents do not contain enough information to answer the question.",
+      "latency_sec": 0.0037980079650878906,
+      "tokens": {
+        "prompt": 6,
+        "completion": 20,
+        "total": 26
+      }
+    },
+    {
+      "question_id": "Q010",
+      "question": "How do algorithms improve?",
+      "question_type": "factual",
+      "difficulty": "medium",
+      "retrieved_results": [
+        {
+          "doc_id": "82ccae2d-e75f-4093-a2aa-7cc015710996",
+          "score": 1.0
+        },
+        {
+          "doc_id": "82ccae2d-e75f-4093-a2aa-7cc015710996",
+          "score": 1.0
+        },
+        {
+          "doc_id": "82ccae2d-e75f-4093-a2aa-7cc015710996",
+          "score": 1.0
+        },
+        {
+          "doc_id": "82ccae2d-e75f-4093-a2aa-7cc015710996",
+          "score": 1.0
+        },
+        {
+          "doc_id": "2cf651f3-9f47-440a-9db5-78cb8fb45c16",
+          "score": 1.0
+        },
+        {
+          "doc_id": "2cf651f3-9f47-440a-9db5-78cb8fb45c16",
+          "score": 1.0
+        },
+        {
+          "doc_id": "2cf651f3-9f47-440a-9db5-78cb8fb45c16",
+          "score": 1.0
+        },
+        {
+          "doc_id": "2cf651f3-9f47-440a-9db5-78cb8fb45c16",
+          "score": 1.0
+        },
+        {
+          "doc_id": "744f96f1-2354-402e-8971-f9c172f29021",
+          "score": 1.0
+        },
+        {
+          "doc_id": "82ccae2d-e75f-4093-a2aa-7cc015710996",
+          "score": 1.0
+        }
+      ],
+      "relevant_documents": [
+        "doc3.txt"
+      ],
+      "metrics": {
+        "MRR": 0.1111111111111111,
+        "Recall@3": 0.0,
+        "Precision@3": 0.0,
+        "Recall@5": 0.0,
+        "Precision@5": 0.0,
+        "Recall@10": 1.0,
+        "Precision@10": 0.1
+      },
+      "generation_metrics": {
+        "citation_coverage": 0.0,
+        "exact_correctness": 0.0
+      },
+      "generated_answer": "The provided documents do not contain enough information to answer the question.",
+      "latency_sec": 0.0043718814849853516,
+      "tokens": {
+        "prompt": 6,
+        "completion": 20,
+        "total": 26
+      }
+    },
+    {
+      "question_id": "Q011",
+      "question": "Is ML a subset of AI?",
+      "question_type": "factual",
+      "difficulty": "easy",
+      "retrieved_results": [
+        {
+          "doc_id": "82ccae2d-e75f-4093-a2aa-7cc015710996",
+          "score": 1.0
+        },
+        {
+          "doc_id": "82ccae2d-e75f-4093-a2aa-7cc015710996",
+          "score": 1.0
+        },
+        {
+          "doc_id": "82ccae2d-e75f-4093-a2aa-7cc015710996",
+          "score": 1.0
+        },
+        {
+          "doc_id": "82ccae2d-e75f-4093-a2aa-7cc015710996",
+          "score": 1.0
+        },
+        {
+          "doc_id": "2cf651f3-9f47-440a-9db5-78cb8fb45c16",
+          "score": 1.0
+        },
+        {
+          "doc_id": "2cf651f3-9f47-440a-9db5-78cb8fb45c16",
+          "score": 1.0
+        },
+        {
+          "doc_id": "2cf651f3-9f47-440a-9db5-78cb8fb45c16",
+          "score": 1.0
+        },
+        {
+          "doc_id": "2cf651f3-9f47-440a-9db5-78cb8fb45c16",
+          "score": 1.0
+        },
+        {
+          "doc_id": "744f96f1-2354-402e-8971-f9c172f29021",
+          "score": 1.0
+        },
+        {
+          "doc_id": "82ccae2d-e75f-4093-a2aa-7cc015710996",
+          "score": 1.0
+        }
+      ],
+      "relevant_documents": [
+        "doc3.txt"
+      ],
+      "metrics": {
+        "MRR": 0.1111111111111111,
+        "Recall@3": 0.0,
+        "Precision@3": 0.0,
+        "Recall@5": 0.0,
+        "Precision@5": 0.0,
+        "Recall@10": 1.0,
+        "Precision@10": 0.1
+      },
+      "generation_metrics": {
+        "citation_coverage": 0.0,
+        "exact_correctness": 0.0
+      },
+      "generated_answer": "The provided documents do not contain enough information to answer the question.",
+      "latency_sec": 0.0036706924438476562,
+      "tokens": {
+        "prompt": 5,
+        "completion": 20,
+        "total": 25
+      }
+    },
+    {
+      "question_id": "Q012",
+      "question": "Do algorithms improve automatically?",
+      "question_type": "factual",
+      "difficulty": "easy",
+      "retrieved_results": [
+        {
+          "doc_id": "82ccae2d-e75f-4093-a2aa-7cc015710996",
+          "score": 1.0
+        },
+        {
+          "doc_id": "82ccae2d-e75f-4093-a2aa-7cc015710996",
+          "score": 1.0
+        },
+        {
+          "doc_id": "82ccae2d-e75f-4093-a2aa-7cc015710996",
+          "score": 1.0
+        },
+        {
+          "doc_id": "82ccae2d-e75f-4093-a2aa-7cc015710996",
+          "score": 1.0
+        },
+        {
+          "doc_id": "2cf651f3-9f47-440a-9db5-78cb8fb45c16",
+          "score": 1.0
+        },
+        {
+          "doc_id": "2cf651f3-9f47-440a-9db5-78cb8fb45c16",
+          "score": 1.0
+        },
+        {
+          "doc_id": "2cf651f3-9f47-440a-9db5-78cb8fb45c16",
+          "score": 1.0
+        },
+        {
+          "doc_id": "2cf651f3-9f47-440a-9db5-78cb8fb45c16",
+          "score": 1.0
+        },
+        {
+          "doc_id": "744f96f1-2354-402e-8971-f9c172f29021",
+          "score": 1.0
+        },
+        {
+          "doc_id": "82ccae2d-e75f-4093-a2aa-7cc015710996",
+          "score": 1.0
+        }
+      ],
+      "relevant_documents": [
+        "doc3.txt"
+      ],
+      "metrics": {
+        "MRR": 0.1111111111111111,
+        "Recall@3": 0.0,
+        "Precision@3": 0.0,
+        "Recall@5": 0.0,
+        "Precision@5": 0.0,
+        "Recall@10": 1.0,
+        "Precision@10": 0.1
+      },
+      "generation_metrics": {
+        "citation_coverage": 0.0,
+        "exact_correctness": 0.0
+      },
+      "generated_answer": "The provided documents do not contain enough information to answer the question.",
+      "latency_sec": 0.004240274429321289,
+      "tokens": {
+        "prompt": 9,
+        "completion": 20,
+        "total": 29
+      }
+    },
+    {
+      "question_id": "Q013",
+      "question": "What is PostgreSQL?",
+      "question_type": "definition",
+      "difficulty": "easy",
+      "retrieved_results": [
+        {
+          "doc_id": "82ccae2d-e75f-4093-a2aa-7cc015710996",
+          "score": 1.0
+        },
+        {
+          "doc_id": "82ccae2d-e75f-4093-a2aa-7cc015710996",
+          "score": 1.0
+        },
+        {
+          "doc_id": "82ccae2d-e75f-4093-a2aa-7cc015710996",
+          "score": 1.0
+        },
+        {
+          "doc_id": "82ccae2d-e75f-4093-a2aa-7cc015710996",
+          "score": 1.0
+        },
+        {
+          "doc_id": "2cf651f3-9f47-440a-9db5-78cb8fb45c16",
+          "score": 1.0
+        },
+        {
+          "doc_id": "2cf651f3-9f47-440a-9db5-78cb8fb45c16",
+          "score": 1.0
+        },
+        {
+          "doc_id": "2cf651f3-9f47-440a-9db5-78cb8fb45c16",
+          "score": 1.0
+        },
+        {
+          "doc_id": "2cf651f3-9f47-440a-9db5-78cb8fb45c16",
+          "score": 1.0
+        },
+        {
+          "doc_id": "744f96f1-2354-402e-8971-f9c172f29021",
+          "score": 1.0
+        },
+        {
+          "doc_id": "82ccae2d-e75f-4093-a2aa-7cc015710996",
+          "score": 1.0
+        }
+      ],
+      "relevant_documents": [
+        "doc4.txt"
+      ],
+      "metrics": {
+        "MRR": 0.0,
+        "Recall@3": 0.0,
+        "Precision@3": 0.0,
+        "Recall@5": 0.0,
+        "Precision@5": 0.0,
+        "Recall@10": 0.0,
+        "Precision@10": 0.0
+      },
+      "generation_metrics": {
+        "citation_coverage": 0.0,
+        "exact_correctness": 0.0
+      },
+      "generated_answer": "The provided documents do not contain enough information to answer the question.",
+      "latency_sec": 0.003683805465698242,
+      "tokens": {
+        "prompt": 4,
+        "completion": 20,
+        "total": 24
+      }
+    },
+    {
+      "question_id": "Q014",
+      "question": "Is PostgreSQL open source?",
+      "question_type": "factual",
+      "difficulty": "easy",
+      "retrieved_results": [
+        {
+          "doc_id": "82ccae2d-e75f-4093-a2aa-7cc015710996",
+          "score": 1.0
+        },
+        {
+          "doc_id": "82ccae2d-e75f-4093-a2aa-7cc015710996",
+          "score": 1.0
+        },
+        {
+          "doc_id": "82ccae2d-e75f-4093-a2aa-7cc015710996",
+          "score": 1.0
+        },
+        {
+          "doc_id": "82ccae2d-e75f-4093-a2aa-7cc015710996",
+          "score": 1.0
+        },
+        {
+          "doc_id": "2cf651f3-9f47-440a-9db5-78cb8fb45c16",
+          "score": 1.0
+        },
+        {
+          "doc_id": "2cf651f3-9f47-440a-9db5-78cb8fb45c16",
+          "score": 1.0
+        },
+        {
+          "doc_id": "2cf651f3-9f47-440a-9db5-78cb8fb45c16",
+          "score": 1.0
+        },
+        {
+          "doc_id": "2cf651f3-9f47-440a-9db5-78cb8fb45c16",
+          "score": 1.0
+        },
+        {
+          "doc_id": "744f96f1-2354-402e-8971-f9c172f29021",
+          "score": 1.0
+        },
+        {
+          "doc_id": "82ccae2d-e75f-4093-a2aa-7cc015710996",
+          "score": 1.0
+        }
+      ],
+      "relevant_documents": [
+        "doc4.txt"
+      ],
+      "metrics": {
+        "MRR": 0.0,
+        "Recall@3": 0.0,
+        "Precision@3": 0.0,
+        "Recall@5": 0.0,
+        "Precision@5": 0.0,
+        "Recall@10": 0.0,
+        "Precision@10": 0.0
+      },
+      "generation_metrics": {
+        "citation_coverage": 0.0,
+        "exact_correctness": 0.0
+      },
+      "generated_answer": "The provided documents do not contain enough information to answer the question.",
+      "latency_sec": 0.004005908966064453,
+      "tokens": {
+        "prompt": 6,
+        "completion": 20,
+        "total": 26
+      }
+    },
+    {
+      "question_id": "Q015",
+      "question": "What language does PostgreSQL extend?",
+      "question_type": "factual",
+      "difficulty": "medium",
+      "retrieved_results": [
+        {
+          "doc_id": "82ccae2d-e75f-4093-a2aa-7cc015710996",
+          "score": 1.0
+        },
+        {
+          "doc_id": "82ccae2d-e75f-4093-a2aa-7cc015710996",
+          "score": 1.0
+        },
+        {
+          "doc_id": "82ccae2d-e75f-4093-a2aa-7cc015710996",
+          "score": 1.0
+        },
+        {
+          "doc_id": "82ccae2d-e75f-4093-a2aa-7cc015710996",
+          "score": 1.0
+        },
+        {
+          "doc_id": "2cf651f3-9f47-440a-9db5-78cb8fb45c16",
+          "score": 1.0
+        },
+        {
+          "doc_id": "2cf651f3-9f47-440a-9db5-78cb8fb45c16",
+          "score": 1.0
+        },
+        {
+          "doc_id": "2cf651f3-9f47-440a-9db5-78cb8fb45c16",
+          "score": 1.0
+        },
+        {
+          "doc_id": "2cf651f3-9f47-440a-9db5-78cb8fb45c16",
+          "score": 1.0
+        },
+        {
+          "doc_id": "744f96f1-2354-402e-8971-f9c172f29021",
+          "score": 1.0
+        },
+        {
+          "doc_id": "82ccae2d-e75f-4093-a2aa-7cc015710996",
+          "score": 1.0
+        }
+      ],
+      "relevant_documents": [
+        "doc4.txt"
+      ],
+      "metrics": {
+        "MRR": 0.0,
+        "Recall@3": 0.0,
+        "Precision@3": 0.0,
+        "Recall@5": 0.0,
+        "Precision@5": 0.0,
+        "Recall@10": 0.0,
+        "Precision@10": 0.0
+      },
+      "generation_metrics": {
+        "citation_coverage": 0.0,
+        "exact_correctness": 0.0
+      },
+      "generated_answer": "The provided documents do not contain enough information to answer the question.",
+      "latency_sec": 0.0038061141967773438,
+      "tokens": {
+        "prompt": 9,
+        "completion": 20,
+        "total": 29
+      }
+    },
+    {
+      "question_id": "Q016",
+      "question": "Can PostgreSQL scale workloads?",
+      "question_type": "factual",
+      "difficulty": "easy",
+      "retrieved_results": [
+        {
+          "doc_id": "82ccae2d-e75f-4093-a2aa-7cc015710996",
+          "score": 1.0
+        },
+        {
+          "doc_id": "82ccae2d-e75f-4093-a2aa-7cc015710996",
+          "score": 1.0
+        },
+        {
+          "doc_id": "82ccae2d-e75f-4093-a2aa-7cc015710996",
+          "score": 1.0
+        },
+        {
+          "doc_id": "82ccae2d-e75f-4093-a2aa-7cc015710996",
+          "score": 1.0
+        },
+        {
+          "doc_id": "2cf651f3-9f47-440a-9db5-78cb8fb45c16",
+          "score": 1.0
+        },
+        {
+          "doc_id": "2cf651f3-9f47-440a-9db5-78cb8fb45c16",
+          "score": 1.0
+        },
+        {
+          "doc_id": "2cf651f3-9f47-440a-9db5-78cb8fb45c16",
+          "score": 1.0
+        },
+        {
+          "doc_id": "2cf651f3-9f47-440a-9db5-78cb8fb45c16",
+          "score": 1.0
+        },
+        {
+          "doc_id": "744f96f1-2354-402e-8971-f9c172f29021",
+          "score": 1.0
+        },
+        {
+          "doc_id": "82ccae2d-e75f-4093-a2aa-7cc015710996",
+          "score": 1.0
+        }
+      ],
+      "relevant_documents": [
+        "doc4.txt"
+      ],
+      "metrics": {
+        "MRR": 0.0,
+        "Recall@3": 0.0,
+        "Precision@3": 0.0,
+        "Recall@5": 0.0,
+        "Precision@5": 0.0,
+        "Recall@10": 0.0,
+        "Precision@10": 0.0
+      },
+      "generation_metrics": {
+        "citation_coverage": 0.0,
+        "exact_correctness": 0.0
+      },
+      "generated_answer": "The provided documents do not contain enough information to answer the question.",
+      "latency_sec": 0.004037618637084961,
+      "tokens": {
+        "prompt": 7,
+        "completion": 20,
+        "total": 27
+      }
+    },
+    {
+      "question_id": "Q017",
+      "question": "What is a neural network?",
+      "question_type": "definition",
+      "difficulty": "easy",
+      "retrieved_results": [
+        {
+          "doc_id": "82ccae2d-e75f-4093-a2aa-7cc015710996",
+          "score": 1.0
+        },
+        {
+          "doc_id": "82ccae2d-e75f-4093-a2aa-7cc015710996",
+          "score": 1.0
+        },
+        {
+          "doc_id": "82ccae2d-e75f-4093-a2aa-7cc015710996",
+          "score": 1.0
+        },
+        {
+          "doc_id": "82ccae2d-e75f-4093-a2aa-7cc015710996",
+          "score": 1.0
+        },
+        {
+          "doc_id": "2cf651f3-9f47-440a-9db5-78cb8fb45c16",
+          "score": 1.0
+        },
+        {
+          "doc_id": "2cf651f3-9f47-440a-9db5-78cb8fb45c16",
+          "score": 1.0
+        },
+        {
+          "doc_id": "2cf651f3-9f47-440a-9db5-78cb8fb45c16",
+          "score": 1.0
+        },
+        {
+          "doc_id": "2cf651f3-9f47-440a-9db5-78cb8fb45c16",
+          "score": 1.0
+        },
+        {
+          "doc_id": "744f96f1-2354-402e-8971-f9c172f29021",
+          "score": 1.0
+        },
+        {
+          "doc_id": "82ccae2d-e75f-4093-a2aa-7cc015710996",
+          "score": 1.0
+        }
+      ],
+      "relevant_documents": [
+        "doc5.txt"
+      ],
+      "metrics": {
+        "MRR": 0.0,
+        "Recall@3": 0.0,
+        "Precision@3": 0.0,
+        "Recall@5": 0.0,
+        "Precision@5": 0.0,
+        "Recall@10": 0.0,
+        "Precision@10": 0.0
+      },
+      "generation_metrics": {
+        "citation_coverage": 0.0,
+        "exact_correctness": 0.0
+      },
+      "generated_answer": "The provided documents do not contain enough information to answer the question.",
+      "latency_sec": 0.0037512779235839844,
+      "tokens": {
+        "prompt": 6,
+        "completion": 20,
+        "total": 26
+      }
+    },
+    {
+      "question_id": "Q018",
+      "question": "Are they composed of nodes?",
+      "question_type": "factual",
+      "difficulty": "easy",
+      "retrieved_results": [
+        {
+          "doc_id": "82ccae2d-e75f-4093-a2aa-7cc015710996",
+          "score": 1.0
+        },
+        {
+          "doc_id": "82ccae2d-e75f-4093-a2aa-7cc015710996",
+          "score": 1.0
+        },
+        {
+          "doc_id": "82ccae2d-e75f-4093-a2aa-7cc015710996",
+          "score": 1.0
+        },
+        {
+          "doc_id": "82ccae2d-e75f-4093-a2aa-7cc015710996",
+          "score": 1.0
+        },
+        {
+          "doc_id": "2cf651f3-9f47-440a-9db5-78cb8fb45c16",
+          "score": 1.0
+        },
+        {
+          "doc_id": "2cf651f3-9f47-440a-9db5-78cb8fb45c16",
+          "score": 1.0
+        },
+        {
+          "doc_id": "2cf651f3-9f47-440a-9db5-78cb8fb45c16",
+          "score": 1.0
+        },
+        {
+          "doc_id": "2cf651f3-9f47-440a-9db5-78cb8fb45c16",
+          "score": 1.0
+        },
+        {
+          "doc_id": "744f96f1-2354-402e-8971-f9c172f29021",
+          "score": 1.0
+        },
+        {
+          "doc_id": "82ccae2d-e75f-4093-a2aa-7cc015710996",
+          "score": 1.0
+        }
+      ],
+      "relevant_documents": [
+        "doc5.txt"
+      ],
+      "metrics": {
+        "MRR": 0.0,
+        "Recall@3": 0.0,
+        "Precision@3": 0.0,
+        "Recall@5": 0.0,
+        "Precision@5": 0.0,
+        "Recall@10": 0.0,
+        "Precision@10": 0.0
+      },
+      "generation_metrics": {
+        "citation_coverage": 0.0,
+        "exact_correctness": 0.0
+      },
+      "generated_answer": "The provided documents do not contain enough information to answer the question.",
+      "latency_sec": 0.0039670467376708984,
+      "tokens": {
+        "prompt": 6,
+        "completion": 20,
+        "total": 26
+      }
+    },
+    {
+      "question_id": "Q019",
+      "question": "What is the modern sense of a neural network?",
+      "question_type": "definition",
+      "difficulty": "medium",
+      "retrieved_results": [
+        {
+          "doc_id": "82ccae2d-e75f-4093-a2aa-7cc015710996",
+          "score": 1.0
+        },
+        {
+          "doc_id": "82ccae2d-e75f-4093-a2aa-7cc015710996",
+          "score": 1.0
+        },
+        {
+          "doc_id": "82ccae2d-e75f-4093-a2aa-7cc015710996",
+          "score": 1.0
+        },
+        {
+          "doc_id": "82ccae2d-e75f-4093-a2aa-7cc015710996",
+          "score": 1.0
+        },
+        {
+          "doc_id": "2cf651f3-9f47-440a-9db5-78cb8fb45c16",
+          "score": 1.0
+        },
+        {
+          "doc_id": "2cf651f3-9f47-440a-9db5-78cb8fb45c16",
+          "score": 1.0
+        },
+        {
+          "doc_id": "2cf651f3-9f47-440a-9db5-78cb8fb45c16",
+          "score": 1.0
+        },
+        {
+          "doc_id": "2cf651f3-9f47-440a-9db5-78cb8fb45c16",
+          "score": 1.0
+        },
+        {
+          "doc_id": "744f96f1-2354-402e-8971-f9c172f29021",
+          "score": 1.0
+        },
+        {
+          "doc_id": "82ccae2d-e75f-4093-a2aa-7cc015710996",
+          "score": 1.0
+        }
+      ],
+      "relevant_documents": [
+        "doc5.txt"
+      ],
+      "metrics": {
+        "MRR": 0.0,
+        "Recall@3": 0.0,
+        "Precision@3": 0.0,
+        "Recall@5": 0.0,
+        "Precision@5": 0.0,
+        "Recall@10": 0.0,
+        "Precision@10": 0.0
+      },
+      "generation_metrics": {
+        "citation_coverage": 0.0,
+        "exact_correctness": 0.0
+      },
+      "generated_answer": "The provided documents do not contain enough information to answer the question.",
+      "latency_sec": 0.004212856292724609,
+      "tokens": {
+        "prompt": 11,
+        "completion": 20,
+        "total": 31
+      }
+    },
+    {
+      "question_id": "Q020",
+      "question": "Is a circuit of neurons a neural network?",
+      "question_type": "factual",
+      "difficulty": "easy",
+      "retrieved_results": [
+        {
+          "doc_id": "82ccae2d-e75f-4093-a2aa-7cc015710996",
+          "score": 1.0
+        },
+        {
+          "doc_id": "82ccae2d-e75f-4093-a2aa-7cc015710996",
+          "score": 1.0
+        },
+        {
+          "doc_id": "82ccae2d-e75f-4093-a2aa-7cc015710996",
+          "score": 1.0
+        },
+        {
+          "doc_id": "82ccae2d-e75f-4093-a2aa-7cc015710996",
+          "score": 1.0
+        },
+        {
+          "doc_id": "2cf651f3-9f47-440a-9db5-78cb8fb45c16",
+          "score": 1.0
+        },
+        {
+          "doc_id": "2cf651f3-9f47-440a-9db5-78cb8fb45c16",
+          "score": 1.0
+        },
+        {
+          "doc_id": "2cf651f3-9f47-440a-9db5-78cb8fb45c16",
+          "score": 1.0
+        },
+        {
+          "doc_id": "2cf651f3-9f47-440a-9db5-78cb8fb45c16",
+          "score": 1.0
+        },
+        {
+          "doc_id": "744f96f1-2354-402e-8971-f9c172f29021",
+          "score": 1.0
+        },
+        {
+          "doc_id": "82ccae2d-e75f-4093-a2aa-7cc015710996",
+          "score": 1.0
+        }
+      ],
+      "relevant_documents": [
+        "doc5.txt"
+      ],
+      "metrics": {
+        "MRR": 0.0,
+        "Recall@3": 0.0,
+        "Precision@3": 0.0,
+        "Recall@5": 0.0,
+        "Precision@5": 0.0,
+        "Recall@10": 0.0,
+        "Precision@10": 0.0
+      },
+      "generation_metrics": {
+        "citation_coverage": 0.0,
+        "exact_correctness": 0.0
+      },
+      "generated_answer": "The provided documents do not contain enough information to answer the question.",
+      "latency_sec": 0.003618955612182617,
+      "tokens": {
+        "prompt": 10,
+        "completion": 20,
+        "total": 30
+      }
+    },
+    {
+      "question_id": "Q021",
+      "question": "What is an example of an interpreted language?",
+      "question_type": "factual",
+      "difficulty": "easy",
+      "retrieved_results": [
+        {
+          "doc_id": "82ccae2d-e75f-4093-a2aa-7cc015710996",
+          "score": 1.0
+        },
+        {
+          "doc_id": "82ccae2d-e75f-4093-a2aa-7cc015710996",
+          "score": 1.0
+        },
+        {
+          "doc_id": "82ccae2d-e75f-4093-a2aa-7cc015710996",
+          "score": 1.0
+        },
+        {
+          "doc_id": "82ccae2d-e75f-4093-a2aa-7cc015710996",
+          "score": 1.0
+        },
+        {
+          "doc_id": "2cf651f3-9f47-440a-9db5-78cb8fb45c16",
+          "score": 1.0
+        },
+        {
+          "doc_id": "2cf651f3-9f47-440a-9db5-78cb8fb45c16",
+          "score": 1.0
+        },
+        {
+          "doc_id": "2cf651f3-9f47-440a-9db5-78cb8fb45c16",
+          "score": 1.0
+        },
+        {
+          "doc_id": "2cf651f3-9f47-440a-9db5-78cb8fb45c16",
+          "score": 1.0
+        },
+        {
+          "doc_id": "744f96f1-2354-402e-8971-f9c172f29021",
+          "score": 1.0
+        },
+        {
+          "doc_id": "82ccae2d-e75f-4093-a2aa-7cc015710996",
+          "score": 1.0
+        }
+      ],
+      "relevant_documents": [
+        "doc1.txt"
+      ],
+      "metrics": {
+        "MRR": 1.0,
+        "Recall@3": 1.0,
+        "Precision@3": 0.3333333333333333,
+        "Recall@5": 1.0,
+        "Precision@5": 0.2,
+        "Recall@10": 1.0,
+        "Precision@10": 0.1
+      },
+      "generation_metrics": {
+        "citation_coverage": 0.0,
+        "exact_correctness": 0.0
+      },
+      "generated_answer": "The provided documents do not contain enough information to answer the question.",
+      "latency_sec": 0.00424504280090332,
+      "tokens": {
+        "prompt": 11,
+        "completion": 20,
+        "total": 31
+      }
+    },
+    {
+      "question_id": "Q022",
+      "question": "Is Python compiled or interpreted?",
+      "question_type": "comparison",
+      "difficulty": "medium",
+      "retrieved_results": [
+        {
+          "doc_id": "82ccae2d-e75f-4093-a2aa-7cc015710996",
+          "score": 1.0
+        },
+        {
+          "doc_id": "82ccae2d-e75f-4093-a2aa-7cc015710996",
+          "score": 1.0
+        },
+        {
+          "doc_id": "82ccae2d-e75f-4093-a2aa-7cc015710996",
+          "score": 1.0
+        },
+        {
+          "doc_id": "82ccae2d-e75f-4093-a2aa-7cc015710996",
+          "score": 1.0
+        },
+        {
+          "doc_id": "2cf651f3-9f47-440a-9db5-78cb8fb45c16",
+          "score": 1.0
+        },
+        {
+          "doc_id": "2cf651f3-9f47-440a-9db5-78cb8fb45c16",
+          "score": 1.0
+        },
+        {
+          "doc_id": "2cf651f3-9f47-440a-9db5-78cb8fb45c16",
+          "score": 1.0
+        },
+        {
+          "doc_id": "2cf651f3-9f47-440a-9db5-78cb8fb45c16",
+          "score": 1.0
+        },
+        {
+          "doc_id": "744f96f1-2354-402e-8971-f9c172f29021",
+          "score": 1.0
+        },
+        {
+          "doc_id": "82ccae2d-e75f-4093-a2aa-7cc015710996",
+          "score": 1.0
+        }
+      ],
+      "relevant_documents": [
+        "doc1.txt"
+      ],
+      "metrics": {
+        "MRR": 1.0,
+        "Recall@3": 1.0,
+        "Precision@3": 0.3333333333333333,
+        "Recall@5": 1.0,
+        "Precision@5": 0.2,
+        "Recall@10": 1.0,
+        "Precision@10": 0.1
+      },
+      "generation_metrics": {
+        "citation_coverage": 0.0,
+        "exact_correctness": 0.0
+      },
+      "generated_answer": "The provided documents do not contain enough information to answer the question.",
+      "latency_sec": 0.0036263465881347656,
+      "tokens": {
+        "prompt": 8,
+        "completion": 20,
+        "total": 28
+      }
+    },
+    {
+      "question_id": "Q023",
+      "question": "Does the lazy dog jump?",
+      "question_type": "factual",
+      "difficulty": "easy",
+      "retrieved_results": [
+        {
+          "doc_id": "82ccae2d-e75f-4093-a2aa-7cc015710996",
+          "score": 1.0
+        },
+        {
+          "doc_id": "82ccae2d-e75f-4093-a2aa-7cc015710996",
+          "score": 1.0
+        },
+        {
+          "doc_id": "82ccae2d-e75f-4093-a2aa-7cc015710996",
+          "score": 1.0
+        },
+        {
+          "doc_id": "82ccae2d-e75f-4093-a2aa-7cc015710996",
+          "score": 1.0
+        },
+        {
+          "doc_id": "2cf651f3-9f47-440a-9db5-78cb8fb45c16",
+          "score": 1.0
+        },
+        {
+          "doc_id": "2cf651f3-9f47-440a-9db5-78cb8fb45c16",
+          "score": 1.0
+        },
+        {
+          "doc_id": "2cf651f3-9f47-440a-9db5-78cb8fb45c16",
+          "score": 1.0
+        },
+        {
+          "doc_id": "2cf651f3-9f47-440a-9db5-78cb8fb45c16",
+          "score": 1.0
+        },
+        {
+          "doc_id": "744f96f1-2354-402e-8971-f9c172f29021",
+          "score": 1.0
+        },
+        {
+          "doc_id": "82ccae2d-e75f-4093-a2aa-7cc015710996",
+          "score": 1.0
+        }
+      ],
+      "relevant_documents": [
+        "doc2.txt"
+      ],
+      "metrics": {
+        "MRR": 0.2,
+        "Recall@3": 0.0,
+        "Precision@3": 0.0,
+        "Recall@5": 1.0,
+        "Precision@5": 0.2,
+        "Recall@10": 1.0,
+        "Precision@10": 0.1
+      },
+      "generation_metrics": {
+        "citation_coverage": 0.0,
+        "exact_correctness": 1.0
+      },
+      "generated_answer": "The provided documents do not contain enough information to answer the question.",
+      "latency_sec": 0.0042684078216552734,
+      "tokens": {
+        "prompt": 5,
+        "completion": 20,
+        "total": 25
+      }
+    },
+    {
+      "question_id": "Q024",
+      "question": "What is AI?",
+      "question_type": "definition",
+      "difficulty": "hard",
+      "retrieved_results": [
+        {
+          "doc_id": "82ccae2d-e75f-4093-a2aa-7cc015710996",
+          "score": 1.0
+        },
+        {
+          "doc_id": "82ccae2d-e75f-4093-a2aa-7cc015710996",
+          "score": 1.0
+        },
+        {
+          "doc_id": "82ccae2d-e75f-4093-a2aa-7cc015710996",
+          "score": 1.0
+        },
+        {
+          "doc_id": "82ccae2d-e75f-4093-a2aa-7cc015710996",
+          "score": 1.0
+        },
+        {
+          "doc_id": "2cf651f3-9f47-440a-9db5-78cb8fb45c16",
+          "score": 1.0
+        },
+        {
+          "doc_id": "2cf651f3-9f47-440a-9db5-78cb8fb45c16",
+          "score": 1.0
+        },
+        {
+          "doc_id": "2cf651f3-9f47-440a-9db5-78cb8fb45c16",
+          "score": 1.0
+        },
+        {
+          "doc_id": "2cf651f3-9f47-440a-9db5-78cb8fb45c16",
+          "score": 1.0
+        },
+        {
+          "doc_id": "744f96f1-2354-402e-8971-f9c172f29021",
+          "score": 1.0
+        },
+        {
+          "doc_id": "82ccae2d-e75f-4093-a2aa-7cc015710996",
+          "score": 1.0
+        }
+      ],
+      "relevant_documents": [
+        "doc3.txt"
+      ],
+      "metrics": {
+        "MRR": 0.1111111111111111,
+        "Recall@3": 0.0,
+        "Precision@3": 0.0,
+        "Recall@5": 0.0,
+        "Precision@5": 0.0,
+        "Recall@10": 1.0,
+        "Precision@10": 0.1
+      },
+      "generation_metrics": {
+        "citation_coverage": 0.0,
+        "exact_correctness": 0.0
+      },
+      "generated_answer": "The provided documents do not contain enough information to answer the question.",
+      "latency_sec": 0.0038394927978515625,
+      "tokens": {
+        "prompt": 2,
+        "completion": 20,
+        "total": 22
+      }
+    },
+    {
+      "question_id": "Q025",
+      "question": "Are workloads scaled safely in Postgres?",
+      "question_type": "factual",
+      "difficulty": "easy",
+      "retrieved_results": [
+        {
+          "doc_id": "82ccae2d-e75f-4093-a2aa-7cc015710996",
+          "score": 1.0
+        },
+        {
+          "doc_id": "82ccae2d-e75f-4093-a2aa-7cc015710996",
+          "score": 1.0
+        },
+        {
+          "doc_id": "82ccae2d-e75f-4093-a2aa-7cc015710996",
+          "score": 1.0
+        },
+        {
+          "doc_id": "82ccae2d-e75f-4093-a2aa-7cc015710996",
+          "score": 1.0
+        },
+        {
+          "doc_id": "2cf651f3-9f47-440a-9db5-78cb8fb45c16",
+          "score": 1.0
+        },
+        {
+          "doc_id": "2cf651f3-9f47-440a-9db5-78cb8fb45c16",
+          "score": 1.0
+        },
+        {
+          "doc_id": "2cf651f3-9f47-440a-9db5-78cb8fb45c16",
+          "score": 1.0
+        },
+        {
+          "doc_id": "2cf651f3-9f47-440a-9db5-78cb8fb45c16",
+          "score": 1.0
+        },
+        {
+          "doc_id": "744f96f1-2354-402e-8971-f9c172f29021",
+          "score": 1.0
+        },
+        {
+          "doc_id": "82ccae2d-e75f-4093-a2aa-7cc015710996",
+          "score": 1.0
+        }
+      ],
+      "relevant_documents": [
+        "doc4.txt"
+      ],
+      "metrics": {
+        "MRR": 0.0,
+        "Recall@3": 0.0,
+        "Precision@3": 0.0,
+        "Recall@5": 0.0,
+        "Precision@5": 0.0,
+        "Recall@10": 0.0,
+        "Precision@10": 0.0
+      },
+      "generation_metrics": {
+        "citation_coverage": 0.0,
+        "exact_correctness": 0.0
+      },
+      "generated_answer": "The provided documents do not contain enough information to answer the question.",
+      "latency_sec": 0.004146099090576172,
+      "tokens": {
+        "prompt": 10,
+        "completion": 20,
+        "total": 30
+      }
+    },
+    {
+      "question_id": "Q026",
+      "question": "Is Postgres an object-relational DB?",
+      "question_type": "factual",
+      "difficulty": "easy",
+      "retrieved_results": [
+        {
+          "doc_id": "82ccae2d-e75f-4093-a2aa-7cc015710996",
+          "score": 1.0
+        },
+        {
+          "doc_id": "82ccae2d-e75f-4093-a2aa-7cc015710996",
+          "score": 1.0
+        },
+        {
+          "doc_id": "82ccae2d-e75f-4093-a2aa-7cc015710996",
+          "score": 1.0
+        },
+        {
+          "doc_id": "82ccae2d-e75f-4093-a2aa-7cc015710996",
+          "score": 1.0
+        },
+        {
+          "doc_id": "2cf651f3-9f47-440a-9db5-78cb8fb45c16",
+          "score": 1.0
+        },
+        {
+          "doc_id": "2cf651f3-9f47-440a-9db5-78cb8fb45c16",
+          "score": 1.0
+        },
+        {
+          "doc_id": "2cf651f3-9f47-440a-9db5-78cb8fb45c16",
+          "score": 1.0
+        },
+        {
+          "doc_id": "2cf651f3-9f47-440a-9db5-78cb8fb45c16",
+          "score": 1.0
+        },
+        {
+          "doc_id": "744f96f1-2354-402e-8971-f9c172f29021",
+          "score": 1.0
+        },
+        {
+          "doc_id": "82ccae2d-e75f-4093-a2aa-7cc015710996",
+          "score": 1.0
+        }
+      ],
+      "relevant_documents": [
+        "doc4.txt"
+      ],
+      "metrics": {
+        "MRR": 0.0,
+        "Recall@3": 0.0,
+        "Precision@3": 0.0,
+        "Recall@5": 0.0,
+        "Precision@5": 0.0,
+        "Recall@10": 0.0,
+        "Precision@10": 0.0
+      },
+      "generation_metrics": {
+        "citation_coverage": 0.0,
+        "exact_correctness": 0.0
+      },
+      "generated_answer": "The provided documents do not contain enough information to answer the question.",
+      "latency_sec": 0.0042438507080078125,
+      "tokens": {
+        "prompt": 9,
+        "completion": 20,
+        "total": 29
+      }
+    },
+    {
+      "question_id": "Q027",
+      "question": "Who developed Python in 1991?",
+      "question_type": "multi-hop",
+      "difficulty": "hard",
+      "retrieved_results": [
+        {
+          "doc_id": "82ccae2d-e75f-4093-a2aa-7cc015710996",
+          "score": 1.0
+        },
+        {
+          "doc_id": "82ccae2d-e75f-4093-a2aa-7cc015710996",
+          "score": 1.0
+        },
+        {
+          "doc_id": "82ccae2d-e75f-4093-a2aa-7cc015710996",
+          "score": 1.0
+        },
+        {
+          "doc_id": "82ccae2d-e75f-4093-a2aa-7cc015710996",
+          "score": 1.0
+        },
+        {
+          "doc_id": "2cf651f3-9f47-440a-9db5-78cb8fb45c16",
+          "score": 1.0
+        },
+        {
+          "doc_id": "2cf651f3-9f47-440a-9db5-78cb8fb45c16",
+          "score": 1.0
+        },
+        {
+          "doc_id": "2cf651f3-9f47-440a-9db5-78cb8fb45c16",
+          "score": 1.0
+        },
+        {
+          "doc_id": "2cf651f3-9f47-440a-9db5-78cb8fb45c16",
+          "score": 1.0
+        },
+        {
+          "doc_id": "744f96f1-2354-402e-8971-f9c172f29021",
+          "score": 1.0
+        },
+        {
+          "doc_id": "82ccae2d-e75f-4093-a2aa-7cc015710996",
+          "score": 1.0
+        }
+      ],
+      "relevant_documents": [
+        "doc1.txt"
+      ],
+      "metrics": {
+        "MRR": 1.0,
+        "Recall@3": 1.0,
+        "Precision@3": 0.3333333333333333,
+        "Recall@5": 1.0,
+        "Precision@5": 0.2,
+        "Recall@10": 1.0,
+        "Precision@10": 0.1
+      },
+      "generation_metrics": {
+        "citation_coverage": 0.0,
+        "exact_correctness": 0.0
+      },
+      "generated_answer": "The provided documents do not contain enough information to answer the question.",
+      "latency_sec": 0.0036079883575439453,
+      "tokens": {
+        "prompt": 7,
+        "completion": 20,
+        "total": 27
+      }
+    },
+    {
+      "question_id": "Q028",
+      "question": "Do nodes exist in artificial neural networks?",
+      "question_type": "factual",
+      "difficulty": "medium",
+      "retrieved_results": [
+        {
+          "doc_id": "82ccae2d-e75f-4093-a2aa-7cc015710996",
+          "score": 1.0
+        },
+        {
+          "doc_id": "82ccae2d-e75f-4093-a2aa-7cc015710996",
+          "score": 1.0
+        },
+        {
+          "doc_id": "82ccae2d-e75f-4093-a2aa-7cc015710996",
+          "score": 1.0
+        },
+        {
+          "doc_id": "82ccae2d-e75f-4093-a2aa-7cc015710996",
+          "score": 1.0
+        },
+        {
+          "doc_id": "2cf651f3-9f47-440a-9db5-78cb8fb45c16",
+          "score": 1.0
+        },
+        {
+          "doc_id": "2cf651f3-9f47-440a-9db5-78cb8fb45c16",
+          "score": 1.0
+        },
+        {
+          "doc_id": "2cf651f3-9f47-440a-9db5-78cb8fb45c16",
+          "score": 1.0
+        },
+        {
+          "doc_id": "2cf651f3-9f47-440a-9db5-78cb8fb45c16",
+          "score": 1.0
+        },
+        {
+          "doc_id": "744f96f1-2354-402e-8971-f9c172f29021",
+          "score": 1.0
+        },
+        {
+          "doc_id": "82ccae2d-e75f-4093-a2aa-7cc015710996",
+          "score": 1.0
+        }
+      ],
+      "relevant_documents": [
+        "doc5.txt"
+      ],
+      "metrics": {
+        "MRR": 0.0,
+        "Recall@3": 0.0,
+        "Precision@3": 0.0,
+        "Recall@5": 0.0,
+        "Precision@5": 0.0,
+        "Recall@10": 0.0,
+        "Precision@10": 0.0
+      },
+      "generation_metrics": {
+        "citation_coverage": 0.0,
+        "exact_correctness": 0.0
+      },
+      "generated_answer": "The provided documents do not contain enough information to answer the question.",
+      "latency_sec": 0.004097461700439453,
+      "tokens": {
+        "prompt": 11,
+        "completion": 20,
+        "total": 31
+      }
+    },
+    {
+      "question_id": "Q029",
+      "question": "Is machine learning related to algorithms?",
+      "question_type": "factual",
+      "difficulty": "easy",
+      "retrieved_results": [
+        {
+          "doc_id": "82ccae2d-e75f-4093-a2aa-7cc015710996",
+          "score": 1.0
+        },
+        {
+          "doc_id": "82ccae2d-e75f-4093-a2aa-7cc015710996",
+          "score": 1.0
+        },
+        {
+          "doc_id": "82ccae2d-e75f-4093-a2aa-7cc015710996",
+          "score": 1.0
+        },
+        {
+          "doc_id": "82ccae2d-e75f-4093-a2aa-7cc015710996",
+          "score": 1.0
+        },
+        {
+          "doc_id": "2cf651f3-9f47-440a-9db5-78cb8fb45c16",
+          "score": 1.0
+        },
+        {
+          "doc_id": "2cf651f3-9f47-440a-9db5-78cb8fb45c16",
+          "score": 1.0
+        },
+        {
+          "doc_id": "2cf651f3-9f47-440a-9db5-78cb8fb45c16",
+          "score": 1.0
+        },
+        {
+          "doc_id": "2cf651f3-9f47-440a-9db5-78cb8fb45c16",
+          "score": 1.0
+        },
+        {
+          "doc_id": "744f96f1-2354-402e-8971-f9c172f29021",
+          "score": 1.0
+        },
+        {
+          "doc_id": "82ccae2d-e75f-4093-a2aa-7cc015710996",
+          "score": 1.0
+        }
+      ],
+      "relevant_documents": [
+        "doc3.txt"
+      ],
+      "metrics": {
+        "MRR": 0.1111111111111111,
+        "Recall@3": 0.0,
+        "Precision@3": 0.0,
+        "Recall@5": 0.0,
+        "Precision@5": 0.0,
+        "Recall@10": 1.0,
+        "Precision@10": 0.1
+      },
+      "generation_metrics": {
+        "citation_coverage": 0.0,
+        "exact_correctness": 0.0
+      },
+      "generated_answer": "The provided documents do not contain enough information to answer the question.",
+      "latency_sec": 0.003991842269897461,
+      "tokens": {
+        "prompt": 10,
+        "completion": 20,
+        "total": 30
+      }
+    },
+    {
+      "question_id": "Q030",
+      "question": "What alphabet does the pangram use?",
+      "question_type": "factual",
+      "difficulty": "easy",
+      "retrieved_results": [
+        {
+          "doc_id": "82ccae2d-e75f-4093-a2aa-7cc015710996",
+          "score": 1.0
+        },
+        {
+          "doc_id": "82ccae2d-e75f-4093-a2aa-7cc015710996",
+          "score": 1.0
+        },
+        {
+          "doc_id": "82ccae2d-e75f-4093-a2aa-7cc015710996",
+          "score": 1.0
+        },
+        {
+          "doc_id": "82ccae2d-e75f-4093-a2aa-7cc015710996",
+          "score": 1.0
+        },
+        {
+          "doc_id": "2cf651f3-9f47-440a-9db5-78cb8fb45c16",
+          "score": 1.0
+        },
+        {
+          "doc_id": "2cf651f3-9f47-440a-9db5-78cb8fb45c16",
+          "score": 1.0
+        },
+        {
+          "doc_id": "2cf651f3-9f47-440a-9db5-78cb8fb45c16",
+          "score": 1.0
+        },
+        {
+          "doc_id": "2cf651f3-9f47-440a-9db5-78cb8fb45c16",
+          "score": 1.0
+        },
+        {
+          "doc_id": "744f96f1-2354-402e-8971-f9c172f29021",
+          "score": 1.0
+        },
+        {
+          "doc_id": "82ccae2d-e75f-4093-a2aa-7cc015710996",
+          "score": 1.0
+        }
+      ],
+      "relevant_documents": [
+        "doc2.txt"
+      ],
+      "metrics": {
+        "MRR": 0.2,
+        "Recall@3": 0.0,
+        "Precision@3": 0.0,
+        "Recall@5": 1.0,
+        "Precision@5": 0.2,
+        "Recall@10": 1.0,
+        "Precision@10": 0.1
+      },
+      "generation_metrics": {
+        "citation_coverage": 0.0,
+        "exact_correctness": 0.0
+      },
+      "generated_answer": "The provided documents do not contain enough information to answer the question.",
+      "latency_sec": 0.004364967346191406,
+      "tokens": {
+        "prompt": 8,
+        "completion": 20,
+        "total": 28
+      }
+    }
+  ]
+}

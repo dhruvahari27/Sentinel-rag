@@ -1,0 +1,9 @@
+{
+  "run_name": "baseline_vector_v1",
+  "dataset": "evaluation/datasets/rag_eval_v1.json",
+  "retriever": "vector",
+  "top_k_evaluations": [3, 5, 10],
+  "embedding_model": "mock-embeddings-1536",
+  "chunking_strategy": "simple_text_50_10",
+  "evaluate_generation": true
+}

@@ -138,3 +138,11 @@ pytest
 - **Phase 15**: Hardening, Security & Testing
 - **Phase 16**: Containerized Staging Deployment
 - **Phase 17**: Final Benchmark & Comparative Evaluation
+
+### Phase 6: Evaluation & Benchmarking Framework
+The evaluation/ directory contains a comprehensive framework for deterministic evaluation of the SENTINEL-RAG system.
+- Datasets: Located in evaluation/datasets/
+- Configuration: JSON configs in evaluation/configs/
+- Execution: python -m evaluation.run --config evaluation/configs/baseline_vector_v1.json
+- Outputs: Raw JSON, aggregated statistics, and Markdown reports.
+
