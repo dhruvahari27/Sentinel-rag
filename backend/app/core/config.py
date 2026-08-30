@@ -6,8 +6,8 @@ class Settings(BaseSettings):
     api_host: str = "0.0.0.0"
     api_port: int = 8000
 
-    database_url: str = "postgresql://postgres:postgres@localhost:5432/sentinel_rag"
-    redis_url: str = "redis://localhost:6379/0"
+    database_url: str = "postgresql+psycopg://postgres:postgres@localhost:5433/sentinel_rag"
+    redis_url: str = "redis://localhost:6380/0"
 
     llm_provider: str = "openai"
     llm_model: str = "gpt-4o"
