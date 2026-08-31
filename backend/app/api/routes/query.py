@@ -1,3 +1,4 @@
+<<<<<<< Updated upstream
 from fastapi import APIRouter, Depends, HTTPException, status
 from sqlalchemy.orm import Session
 from app.db.session import get_db
@@ -43,3 +44,38 @@ def query_documents(
             status_code=status.HTTP_500_INTERNAL_SERVER_ERROR,
             detail=f"Failed to query documents: {str(e)}"
         )
+=======
+from fastapi import APIRouter, Query
+from pydantic import BaseModel, Field
+from typing import List, Optional, Dict, Any
+from app.services.retrieval import VectorRetriever, BM25Retriever, HybridRetriever, RetrievedChunk
+
+router = APIRouter()
+
+class QueryRequest(BaseModel):
+    question: str
+    retrieval_method: str = "vector"  # default backward compatible
+    top_k: int = 5
+    filters: Optional[Dict[str, Any]] = None
+
+class QueryResponse(BaseModel):
+    results: List[RetrievedChunk]
+    retrieval_method: str
+
+# In a real app, these would be initialized on startup using real chunks from the DB
+# For this phase, we instantiate stubs.
+vector_retriever = VectorRetriever([])
+bm25_retriever = BM25Retriever([])
+hybrid_retriever = HybridRetriever(vector_retriever, bm25_retriever)
+
+@router.post("/query", response_model=QueryResponse)
+def run_query(request: QueryRequest):
+    if request.retrieval_method == "bm25":
+        results = bm25_retriever.retrieve(request.question, top_k=request.top_k, filters=request.filters)
+    elif request.retrieval_method == "hybrid":
+        results = hybrid_retriever.retrieve(request.question, top_k=request.top_k, filters=request.filters)
+    else:
+        results = vector_retriever.retrieve(request.question, top_k=request.top_k, filters=request.filters)
+        
+    return QueryResponse(results=results, retrieval_method=request.retrieval_method)
+>>>>>>> Stashed changes

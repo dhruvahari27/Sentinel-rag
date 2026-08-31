@@ -1,3 +1,4 @@
+<<<<<<< Updated upstream
 from typing import List, Dict
 from sqlalchemy.orm import Session
 from app.schemas.retrieval import RetrievalChunk
@@ -66,3 +67,84 @@ class HybridRetriever(BaseRetriever):
             fused_results.append(fused_chunk)
             
         return fused_results
+=======
+from typing import List, Dict, Any, Optional
+from .base import BaseRetriever, RetrievedChunk
+
+class HybridRetriever(BaseRetriever):
+    def __init__(self, vector_retriever: BaseRetriever, bm25_retriever: BaseRetriever, rrf_k: int = 60):
+        """
+        Initialize with configured underlying retrievers.
+        """
+        self.vector_retriever = vector_retriever
+        self.bm25_retriever = bm25_retriever
+        self.rrf_k = rrf_k
+
+    def retrieve(self, query: str, top_k: int = 5, filters: Optional[Dict[str, Any]] = None) -> List[RetrievedChunk]:
+        # Usually hybrid fetches more candidates from underlying to improve fusion quality
+        candidate_k = top_k * 2
+        
+        vector_results = self.vector_retriever.retrieve(query, top_k=candidate_k, filters=filters)
+        bm25_results = self.bm25_retriever.retrieve(query, top_k=candidate_k, filters=filters)
+        
+        # Merge duplicates and compute RRF
+        chunk_map = {}
+        
+        # Process Vector results
+        for item in vector_results:
+            rrf_score = 1.0 / (self.rrf_k + item.rank)
+            chunk_map[item.chunk_id] = {
+                "chunk_id": item.chunk_id,
+                "document_id": item.document_id,
+                "document_version_id": item.document_version_id,
+                "vector_rank": item.rank,
+                "vector_score": item.score,
+                "bm25_rank": None,
+                "bm25_score": None,
+                "rrf_score": rrf_score,
+                "metadata": item.metadata
+            }
+            
+        # Process BM25 results
+        for item in bm25_results:
+            rrf_score = 1.0 / (self.rrf_k + item.rank)
+            if item.chunk_id in chunk_map:
+                chunk_map[item.chunk_id]["bm25_rank"] = item.rank
+                chunk_map[item.chunk_id]["bm25_score"] = item.score
+                chunk_map[item.chunk_id]["rrf_score"] += rrf_score
+            else:
+                chunk_map[item.chunk_id] = {
+                    "chunk_id": item.chunk_id,
+                    "document_id": item.document_id,
+                    "document_version_id": item.document_version_id,
+                    "vector_rank": None,
+                    "vector_score": None,
+                    "bm25_rank": item.rank,
+                    "bm25_score": item.score,
+                    "rrf_score": rrf_score,
+                    "metadata": item.metadata
+                }
+                
+        # Sort by RRF score descending
+        fused_list = sorted(chunk_map.values(), key=lambda x: x["rrf_score"], reverse=True)
+        
+        results = []
+        for rank, item in enumerate(fused_list[:top_k], start=1):
+            results.append(RetrievedChunk(
+                chunk_id=item["chunk_id"],
+                document_id=item["document_id"],
+                document_version_id=item["document_version_id"],
+                score=item["rrf_score"],
+                rank=rank,
+                retrieval_method="hybrid",
+                metadata={
+                    **item["metadata"],
+                    "vector_rank": item["vector_rank"],
+                    "vector_score": item["vector_score"],
+                    "bm25_rank": item["bm25_rank"],
+                    "bm25_score": item["bm25_score"]
+                }
+            ))
+            
+        return results
+>>>>>>> Stashed changes

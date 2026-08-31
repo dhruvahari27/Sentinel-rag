@@ -1,3 +1,4 @@
+<<<<<<< Updated upstream
 from typing import List
 from sqlalchemy.orm import Session
 from sqlalchemy import select
@@ -46,3 +47,67 @@ class VectorRetriever(BaseRetriever):
             )
             
         return retrieval_chunks
+=======
+import random
+import time
+from typing import List, Dict, Any, Optional
+from .base import BaseRetriever, RetrievedChunk
+
+class VectorRetriever(BaseRetriever):
+    def __init__(self, chunks: List[Dict[str, Any]] = None):
+        """
+        Stub initialization. In real system, this connects to pgvector.
+        """
+        self.chunks = chunks or []
+
+    def retrieve(self, query: str, top_k: int = 5, filters: Optional[Dict[str, Any]] = None) -> List[RetrievedChunk]:
+        """
+        Simulate a vector retrieval search.
+        Since we don't have embeddings here, we'll return a deterministic but semi-randomized set 
+        based on a hash of the query to keep it stable for tests.
+        """
+        if not self.chunks:
+            return []
+
+        # Simulate latency
+        time.sleep(0.02)
+        
+        # Apply filters
+        filtered_chunks = []
+        for chunk in self.chunks:
+            if filters:
+                match = True
+                for k, v in filters.items():
+                    if chunk.get("metadata", {}).get(k) != v and chunk.get(k) != v:
+                        match = False
+                        break
+                if match:
+                    filtered_chunks.append(chunk)
+            else:
+                filtered_chunks.append(chunk)
+
+        if not filtered_chunks:
+            return []
+
+        # Use random with seed based on query length and first char to be stable for tests
+        seed = len(query) + (ord(query[0]) if query else 0)
+        rng = random.Random(seed)
+        
+        # Sample chunks
+        sampled = rng.sample(filtered_chunks, min(top_k, len(filtered_chunks)))
+        
+        results = []
+        for rank, chunk in enumerate(sampled, start=1):
+            # Simulated cosine similarity score
+            score = 1.0 - (rank * 0.05)
+            results.append(RetrievedChunk(
+                chunk_id=chunk["chunk_id"],
+                document_id=chunk["document_id"],
+                score=score,
+                rank=rank,
+                retrieval_method="vector",
+                metadata=chunk.get("metadata", {})
+            ))
+
+        return results
+>>>>>>> Stashed changes
